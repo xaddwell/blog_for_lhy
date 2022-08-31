@@ -1,0 +1,192 @@
+{
+    "header": [
+        " *   ",
+        " *   如非需要调试，本文件可删除",
+        " *   非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.me/faq#INFO-JSON",
+        " *   "
+    ],
+    "resources": [
+        {
+            "url": "https://www.windsky.site/",
+            "path": "index.html",
+            "saved": true,
+            "size": 9012,
+            "children": [
+                {
+                    "url": "https://cn05.img.horain.top/imgs/2021/04/321db681507c2e0c.jpeg",
+                    "saved": false
+                },
+                {
+                    "url": "https://www.windsky.site/images/2019022321112047.jpeg",
+                    "path": "img/2019022321112047.jpeg",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://static.imalan.cn/file/image/post/56171.jpg",
+                    "path": "img/56171.jpeg",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://www.windsky.site/js/jquery.min.js",
+                    "path": "js/jquery.min.js",
+                    "saved": true,
+                    "size": 86927,
+                    "children": []
+                },
+                {
+                    "url": "https://www.windsky.site/js/jquery.scrollex.min.js",
+                    "path": "js/jquery.scrollex.min.js",
+                    "saved": true,
+                    "size": 2257,
+                    "children": []
+                },
+                {
+                    "url": "https://www.windsky.site/js/jquery.scrolly.min.js",
+                    "path": "js/jquery.scrolly.min.js",
+                    "saved": true,
+                    "size": 831,
+                    "children": []
+                },
+                {
+                    "url": "https://www.windsky.site/js/browser.min.js",
+                    "path": "js/browser.min.js",
+                    "saved": true,
+                    "size": 1851,
+                    "children": []
+                },
+                {
+                    "url": "https://www.windsky.site/js/breakpoints.min.js",
+                    "path": "js/breakpoints.min.js",
+                    "saved": true,
+                    "size": 2439,
+                    "children": []
+                },
+                {
+                    "url": "https://www.windsky.site/js/util.js",
+                    "path": "js/util.js",
+                    "saved": true,
+                    "size": 12433,
+                    "children": []
+                },
+                {
+                    "url": "https://www.windsky.site/js/main.js",
+                    "path": "js/main.js",
+                    "saved": true,
+                    "size": 1801,
+                    "children": []
+                },
+                {
+                    "url": "https://www.windsky.site/css/main.css",
+                    "path": "css/main.css",
+                    "saved": true,
+                    "size": 71201,
+                    "children": [
+                        {
+                            "url": "https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css",
+                            "saved": false
+                        },
+                        {
+                            "url": "https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic",
+                            "saved": false
+                        },
+                        {
+                            "url": "https://cn05.img.horain.top/imgs/2021/05/252f1a665f485b2d.jpg",
+                            "saved": false
+                        },
+                        {
+                            "url": "https://www.windsky.site/images/close.svg",
+                            "path": "img/close.svg",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "https://www.windsky.site/images/bars.svg",
+                            "path": "img/bars.svg",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "https://www.windsky.site/images/arrow.svg",
+                            "path": "img/arrow.svg",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "https://static.imalan.cn/file/image/post/4ab63.jpg",
+                            "path": "img/4ab63.jpg",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "url": "https://www.windsky.site/images/2018032410033818.png",
+                    "path": "img/2018032410033818.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                }
+            ]
+        }
+    ],
+    "alias": "www-windsky-site-teuyd2ak",
+    "info": {
+        "request": {
+            "headers": {
+                "accept": "text/html,*/*",
+                "accept-language": "zh-CN,zh;q=0.9",
+                "accept-encoding": "gzip",
+                "cache-control": "no-cache",
+                "cookie": "",
+                "referer": "https://www.windsky.site/",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+                "x-scraper-website": "https://bazhan.me/"
+            }
+        },
+        "response": {
+            "redirects": [],
+            "responseUrl": "https://www.windsky.site/",
+            "statusCode": 200,
+            "headers": {
+                "server": "Tengine",
+                "date": "Thu, 20 Jan 2022 15:51:28 GMT",
+                "content-type": "text/html",
+                "last-modified": "Thu, 23 Dec 2021 11:04:31 GMT",
+                "transfer-encoding": "chunked",
+                "connection": "close",
+                "vary": "Accept-Encoding",
+                "etag": "W/\"61c457bf-28f8\"",
+                "strict-transport-security": "max-age=31536000"
+            }
+        },
+        "time": {
+            "start": "2022-01-20T15:51:27.957Z",
+            "end": "2022-01-20T15:51:36.940Z"
+        },
+        "remark": [],
+        "title": "闫立晔的个人首页",
+        "ip": "149.129.75.224",
+        "url": "https://www.windsky.site/",
+        "main": "index.html",
+        "domain": "www.windsky.site",
+        "origin": "https://www.windsky.site",
+        "totalSize": "189 kB"
+    },
+    "options": {
+        "formatter": [],
+        "url": "https://www.windsky.site/",
+        "referer": "",
+        "cookies": "",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+        "filenameGenerator": "byType"
+    }
+}

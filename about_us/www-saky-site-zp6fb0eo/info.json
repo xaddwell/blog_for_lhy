@@ -1,0 +1,237 @@
+{
+    "header": [
+        " *   ",
+        " *   如非需要调试，本文件可删除",
+        " *   非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.me/faq#INFO-JSON",
+        " *   "
+    ],
+    "resources": [
+        {
+            "url": "https://www.saky.site/",
+            "path": "index.html",
+            "saved": true,
+            "size": 8260,
+            "children": [
+                {
+                    "url": "https://cdn.jsdelivr.net/gh/shellblock/cdn@master/img/logo.png",
+                    "path": "img/logo.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://cdn.jsdelivr.net/gh/shellblock/cdn@master/img/social/github.png",
+                    "path": "img/github.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://cdn.jsdelivr.net/gh/shellblock/cdn@master/img/social/bilibili.png",
+                    "path": "img/bilibili.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://cdn.jsdelivr.net/gh/shellblock/cdn@master/img/social/wangyiyun.png",
+                    "path": "img/wangyiyun.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://cdn.jsdelivr.net/gh/shellblock/cdn@master/img/social/zhihu.png",
+                    "path": "img/zhihu.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://cdn.jsdelivr.net/gh/shellblock/cdn@master/img/social/sina.png",
+                    "path": "img/sina.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/email.svg",
+                    "path": "img/email.svg",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://www.saky.site/assets/js/jquery.min.js",
+                    "path": "js/jquery.min.js",
+                    "saved": true,
+                    "size": 86927,
+                    "children": []
+                },
+                {
+                    "url": "https://www.saky.site/assets/js/fetch.min.js",
+                    "path": "js/fetch.min.js",
+                    "saved": true,
+                    "size": 7249,
+                    "children": []
+                },
+                {
+                    "url": "https://www.saky.site/assets/js/main.js",
+                    "path": "js/main.js",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://www.saky.site/assets/css/onlinewebfonts.css",
+                    "path": "css/onlinewebfonts.css",
+                    "saved": true,
+                    "size": 678,
+                    "children": [
+                        {
+                            "url": "https://www.saky.site/assets/fonts/d571b52b60b5617399ce8eab62bf3eb3.eot",
+                            "path": "fonts/d571b52b60b5617399ce8eab62bf3eb3.eot",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "https://www.saky.site/assets/fonts/d571b52b60b5617399ce8eab62bf3eb3.woff2",
+                            "path": "fonts/d571b52b60b5617399ce8eab62bf3eb3.woff2",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "https://www.saky.site/assets/fonts/d571b52b60b5617399ce8eab62bf3eb3.woff",
+                            "path": "fonts/d571b52b60b5617399ce8eab62bf3eb3.woff",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "https://www.saky.site/assets/fonts/d571b52b60b5617399ce8eab62bf3eb3.ttf",
+                            "path": "fonts/d571b52b60b5617399ce8eab62bf3eb3.ttf",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "https://www.saky.site/assets/fonts/d571b52b60b5617399ce8eab62bf3eb3.svg#Engravers%27%20Old%20English%20BT",
+                            "path": "img/d571b52b60b5617399ce8eab62bf3eb3.svg",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "url": "https://www.saky.site/assets/css/vno.css",
+                    "path": "css/vno.css",
+                    "saved": true,
+                    "size": 162924,
+                    "children": [
+                        {
+                            "url": "https://www.saky.site/img/beian.png",
+                            "saved": false
+                        }
+                    ]
+                },
+                {
+                    "url": "https://www.saky.site/assets/css/iconfont.css",
+                    "path": "css/iconfont.css",
+                    "saved": true,
+                    "size": 6966,
+                    "children": [
+                        {
+                            "url": "https://www.saky.site/assets/css/iconfont.eot?t=1538765677655",
+                            "saved": false
+                        },
+                        {
+                            "url": "https://www.saky.site/assets/css/iconfont.eot?t=1538765677655#iefix",
+                            "saved": false
+                        },
+                        {
+                            "url": "https://www.saky.site/assets/css/iconfont.ttf?t=1538765677655",
+                            "saved": false
+                        },
+                        {
+                            "url": "https://www.saky.site/assets/css/iconfont.svg?t=1538765677655#iconfont",
+                            "saved": false
+                        }
+                    ]
+                },
+                {
+                    "url": "https://www.saky.site/apple-touch-icon.png",
+                    "path": "img/apple-touch-icon.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://www.saky.site/favicon.ico",
+                    "path": "favicon.ico",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                }
+            ]
+        }
+    ],
+    "alias": "www-saky-site-zp6fb0eo",
+    "info": {
+        "request": {
+            "headers": {
+                "accept": "text/html,*/*",
+                "accept-language": "zh-CN,zh;q=0.9",
+                "accept-encoding": "gzip",
+                "cache-control": "no-cache",
+                "cookie": "",
+                "referer": "https://www.saky.site/assets/css/vno.css",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+                "x-scraper-website": "https://bazhan.me/"
+            }
+        },
+        "response": {
+            "redirects": [],
+            "responseUrl": "https://www.saky.site/",
+            "statusCode": 200,
+            "headers": {
+                "server": "openresty",
+                "date": "Thu, 13 Jan 2022 11:32:04 GMT",
+                "content-type": "text/html; charset=utf-8",
+                "transfer-encoding": "chunked",
+                "connection": "close",
+                "vary": "Accept-Encoding",
+                "last-modified": "Sun, 26 Dec 2021 11:11:30 GMT",
+                "content-disposition": "inline; filename=\"index.html\""
+            }
+        },
+        "time": {
+            "start": "2022-01-13T11:31:57.620Z",
+            "end": "2022-01-13T11:32:11.398Z"
+        },
+        "remark": [],
+        "title": "Saky's HomePage | shellblock",
+        "ip": "23.236.97.220",
+        "url": "https://www.saky.site/",
+        "main": "index.html",
+        "domain": "www.saky.site",
+        "origin": "https://www.saky.site",
+        "totalSize": "273 kB"
+    },
+    "options": {
+        "formatter": [
+            "html",
+            "css",
+            "js",
+            "saveOriginal"
+        ],
+        "url": "https://www.saky.site/",
+        "referer": "",
+        "cookies": "",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+        "filenameGenerator": "byType"
+    }
+}

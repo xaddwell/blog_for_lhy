@@ -1,0 +1,216 @@
+{
+    "header": [
+        " *   ",
+        " *   如非需要调试，本文件可删除",
+        " *   非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.me/faq#INFO-JSON",
+        " *   "
+    ],
+    "resources": [
+        {
+            "url": "https://blog.beixibaobao.com/",
+            "path": "index.html",
+            "saved": true,
+            "size": 37924,
+            "children": [
+                {
+                    "url": "https://api.beixibaobao.com/pic-ecy/pc/img/88626035_p0_master1200.jpg",
+                    "path": "img/88626035_p0_master1200.jpeg",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/uploads/2019/12/logo.png",
+                    "path": "img/logo.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/images/rand/115.jpg",
+                    "path": "img/115.jpeg",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/uploads/2021/05/101f56346de24d9db9e742d2b5d02969.png",
+                    "path": "img/101f56346de24d9db9e742d2b5d02969.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/uploads/2021/12/@V05DAM2OWD9YIJN3_4-380x220.png",
+                    "path": "img/@V05DAM2OWD9YIJN3_4-380x220.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/uploads/2021/08/%E3%81%BA%E3%81%A1%E3%81%BA%E3%81%A1%E3%80%82_54609979-150x150.jpg",
+                    "path": "img/ぺちぺち。_54609979-150x150.jpeg",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/images/rand/90.jpg",
+                    "path": "img/90.jpeg",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/images/rand/66.jpg",
+                    "path": "img/66.jpeg",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/images/rand/126.jpg",
+                    "path": "img/126.jpeg",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/images/rand/41.jpg",
+                    "saved": false
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/images/rand/237.jpg",
+                    "path": "img/237.jpeg",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/uploads/2021/04/wp_editor_md_089c6e707a524b4ffc7e30c363e5930b.jpg",
+                    "saved": false
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/uploads/2021/02/wp_editor_md_bdbc561d534d84d7df0a7c6f5ca698f4.jpg",
+                    "path": "img/wp_editor_md_bdbc561d534d84d7df0a7c6f5ca698f4.jpeg",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/images/top/bear.gif",
+                    "saved": false
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/js/jquery.min.js",
+                    "saved": false
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/js/jquery.pjax.js",
+                    "saved": false
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/js/theme.js",
+                    "saved": false
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/js/comments.js",
+                    "saved": false
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/js/lolimeow.js",
+                    "saved": false
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/js/APlayer.min.js",
+                    "saved": false
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/js/Meting.min.js",
+                    "saved": false
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/css/themes.css",
+                    "saved": false
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/css/style.css?6.0",
+                    "saved": false
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/plugins/wechat-social-login/assets/css/social.css?ver=1.3.0",
+                    "saved": false
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/wp-content/themes/lolimeow/assets/css/APlayer.min.css",
+                    "saved": false
+                },
+                {
+                    "url": "https://blog.beixibaobao.com/favicon.ico",
+                    "saved": false
+                }
+            ]
+        }
+    ],
+    "alias": "blog-beixibaobao-com-ty9tbq5a",
+    "info": {
+        "request": {
+            "headers": {
+                "accept": "text/html,*/*",
+                "accept-language": "zh-CN,zh;q=0.9",
+                "accept-encoding": "gzip",
+                "cache-control": "no-cache",
+                "cookie": "",
+                "referer": "https://blog.beixibaobao.com/",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+                "x-scraper-website": "https://bazhan.me/"
+            }
+        },
+        "response": {
+            "redirects": [],
+            "responseUrl": "https://blog.beixibaobao.com/",
+            "statusCode": 200,
+            "headers": {
+                "server": "nginx",
+                "date": "Thu, 13 Jan 2022 11:35:59 GMT",
+                "content-type": "text/html; charset=UTF-8",
+                "transfer-encoding": "chunked",
+                "connection": "close",
+                "vary": "Accept-Encoding",
+                "set-cookie": [
+                    "X_CACHE_KEY=b05d778cb03c36ddb5e3db0020d42035; path=/; Expires=Fri, 31-Dec-9999 23:59:59 GMT"
+                ],
+                "link": "<https://blog.beixibaobao.com/wp-json/>; rel=\"https://api.w.org/\"",
+                "strict-transport-security": "max-age=31536000, max-age=31536000",
+                "access-control-allow-origin": "*, *",
+                "x-cache": "HIT"
+            }
+        },
+        "time": {
+            "start": "2022-01-13T11:35:54.847Z",
+            "end": "2022-01-13T11:36:38.136Z"
+        },
+        "remark": [],
+        "title": "北熙宝宝 | 北熙赤ちゃん - 遇见美好的明天",
+        "ip": "221.229.173.135",
+        "url": "https://blog.beixibaobao.com/",
+        "main": "index.html",
+        "domain": "blog.beixibaobao.com",
+        "origin": "https://blog.beixibaobao.com",
+        "totalSize": "37.9 kB"
+    },
+    "options": {
+        "formatter": [
+            "html",
+            "css",
+            "js",
+            "saveOriginal"
+        ],
+        "url": "https://blog.beixibaobao.com/",
+        "referer": "",
+        "cookies": "",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+        "filenameGenerator": "byType"
+    }
+}

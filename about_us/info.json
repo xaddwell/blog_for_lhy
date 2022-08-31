@@ -1,0 +1,188 @@
+{
+    "header": [
+        " *   ",
+        " *   如非需要调试，本文件可删除",
+        " *   非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.me/faq#INFO-JSON",
+        " *   "
+    ],
+    "resources": [
+        {
+            "url": "https://blog.imalan.cn/",
+            "path": "index.html",
+            "saved": true,
+            "size": 8645,
+            "children": [
+                {
+                    "url": "https://blog.imalan.cn/logo.jpg",
+                    "path": "img/logo.jpeg",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://analytics.zui.moe/umami.js",
+                    "path": "js/umami.js",
+                    "saved": true,
+                    "size": 2575,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.imalan.cn/assets/ExSearch/jquery.min.js",
+                    "path": "js/jquery.min.js",
+                    "saved": true,
+                    "size": 86926,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.imalan.cn/assets/ExSearch/ExSearch-493cb9cd89.js",
+                    "path": "js/ExSearch-493cb9cd89.js",
+                    "saved": true,
+                    "size": 5246,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.imalan.cn/assets/main.css?v=14",
+                    "path": "css/main.css",
+                    "saved": true,
+                    "size": 18594,
+                    "children": []
+                },
+                {
+                    "url": "https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css",
+                    "saved": false
+                },
+                {
+                    "url": "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;900&display=swap",
+                    "saved": false
+                },
+                {
+                    "url": "https://blog.imalan.cn/assets/ExSearch/ExSearch-182e5a8868.css",
+                    "path": "css/ExSearch-182e5a8868.css",
+                    "saved": true,
+                    "size": 5177,
+                    "children": [
+                        {
+                            "url": "https://blog.imalan.cn/assets/ExSearch/iconfont.eot?t=1550575887587",
+                            "path": "fonts/iconfont.eot",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "https://blog.imalan.cn/assets/ExSearch/iconfont.woff?t=1550575887587",
+                            "path": "fonts/iconfont.woff",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "https://blog.imalan.cn/assets/ExSearch/iconfont.ttf?t=1550575887587",
+                            "path": "fonts/iconfont.ttf",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        },
+                        {
+                            "url": "https://blog.imalan.cn/assets/ExSearch/iconfont.svg?t=1550575887587#iconfont",
+                            "path": "img/iconfont.svg",
+                            "saved": true,
+                            "size": 0,
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "url": "https://blog.imalan.cn/apple-touch-icon.png?v=PY43YeeEKx",
+                    "path": "img/apple-touch-icon.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.imalan.cn/favicon-32x32.png?v=yyLyaqbyRG",
+                    "path": "img/favicon-32x32.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.imalan.cn/favicon-16x16.png?v=yyLyaqbyRG",
+                    "path": "img/favicon-16x16.png",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.imalan.cn/safari-pinned-tab.svg?v=yyLyaqbyRG",
+                    "path": "img/safari-pinned-tab.svg",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                },
+                {
+                    "url": "https://blog.imalan.cn/favicon.ico?v=yyLyaqbyRG",
+                    "path": "favicon.ico",
+                    "saved": true,
+                    "size": 0,
+                    "children": []
+                }
+            ]
+        }
+    ],
+    "alias": "blog-imalan-cn-pjeyu6zk",
+    "info": {
+        "request": {
+            "headers": {
+                "accept": "text/html,*/*",
+                "accept-language": "zh-CN,zh;q=0.9",
+                "accept-encoding": "gzip",
+                "cache-control": "no-cache",
+                "cookie": "",
+                "referer": "https://blog.imalan.cn/assets/ExSearch/ExSearch-182e5a8868.css",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+                "x-scraper-website": "https://bazhan.me/"
+            }
+        },
+        "response": {
+            "redirects": [],
+            "responseUrl": "https://blog.imalan.cn/",
+            "statusCode": 200,
+            "headers": {
+                "server": "nginx",
+                "date": "Thu, 13 Jan 2022 10:49:41 GMT",
+                "content-type": "text/html",
+                "last-modified": "Sun, 05 Dec 2021 10:23:07 GMT",
+                "transfer-encoding": "chunked",
+                "connection": "close",
+                "vary": "Accept-Encoding",
+                "etag": "W/\"61ac930b-23fa\""
+            }
+        },
+        "time": {
+            "start": "2022-01-13T10:49:35.303Z",
+            "end": "2022-01-13T10:49:49.622Z"
+        },
+        "remark": [],
+        "title": "失眠海峡 - 我要与你坦诚相见",
+        "ip": "47.117.112.152",
+        "url": "https://blog.imalan.cn/",
+        "main": "index.html",
+        "domain": "blog.imalan.cn",
+        "origin": "https://blog.imalan.cn",
+        "totalSize": "127 kB"
+    },
+    "options": {
+        "formatter": [
+            "html",
+            "css",
+            "js",
+            "saveOriginal"
+        ],
+        "url": "https://blog.imalan.cn/",
+        "referer": "",
+        "cookies": "",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+        "filenameGenerator": "byType"
+    }
+}

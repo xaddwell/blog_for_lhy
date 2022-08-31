@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"534901ca38","applicationID":"163388214","transactionName":"cVxfEUMNWV4EF0tAEFNHWAZuElRVBBZLWwtfVg==","queueTime":0,"applicationTime":202,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"UgQCVFJTGwIGV1JaDwMGUg==",licenseKey:"534901ca38",applicationID:"163388214"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(28),s={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,i.indexOf("dev")!==-1&&(s.dev=!0),i.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&o.on("internal-error",function(t){r(t.stack)}),s.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:i(s||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:c.now();o("err",[t,n])}var o=t("handle"),a=t(29),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!c.disabled){var p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(10),t(9),"addEventListener"in window&&t(6),c.xhrWrappable&&t(11),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){o("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function i(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+l])try{window.performance[h](m,i,!1)}catch(t){}else try{window.performance[h]("webkit"+m,i,!1)}catch(t){}}function o(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(10),f=t(9),u=t(5),d=t(19),l="learResourceTimings",p="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",S=t("loader");if(!S.disabled){S.features.stn=!0,t(8),"addEventListener"in window&&t(6);var O=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof O&&(this.bstStart=S.now())}),a.on(b,function(t,e){var n=t[0];n instanceof O&&s("bst",[n,e,this.bstStart,S.now()])}),c.on(x,function(t,e,n){this.bstStart=S.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),this.bstType])}),f.on(x,function(){this.bstStart=S.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=S.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):p in window.performance&&(window.performance["c"+l]?window.performance[p](m,i,d(!1)):window.performance[p]("webkit"+m,i,d(!1))),document[p]("scroll",o,d(!1)),document[p]("keypress",o,d(!1)),document[p]("click",o,d(!1))}}},{}],5:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){s.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return i.emit(n+"start",[t,a],s),s.then(function(t){return i.emit(n+"end",[null,t],s),t},function(t){throw i.emit(n+"end",[t],s),t})})}var i=t("ee").get("fetch"),o=t(29),a=t(28);e.exports=i;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(s,"fetch",c),i.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(c+"done",[null,e],n)}else i.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],10:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(c+u,r),o.on(s+u,i)},{}],11:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function o(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,S.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=t(19),p=NREUM.o,h=p.XHR,m=p.MO,v=p.PR,w=p.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,i,l(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,S=document.createTextNode(R);new m(a).observe(S,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],12:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&l())&&(w.traceContextParentHeader=i(h,m),w.traceContextStateHeader=o(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",s=1,c="",f="";return i+"@nr="+o+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(s.d.tk=o),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(25),h=t(14);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],13:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this))}}function i(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function o(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(14),f=t(12).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(20),m=t(18),v=t(15),w=t(19),g=NREUM.o.REQ,y=window.XMLHttpRequest;a.features.xhr=!0,t(11),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){o(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<l;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof y&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof y&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof y&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},o=this.target;"string"==typeof o?n=o:"object"==typeof o&&o instanceof g?n=o.url:window.URL&&"object"==typeof o&&o instanceof URL&&(n=o.href),i(this,n);var s=(""+(o&&o instanceof g&&o.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}),u.on("fetch-done",function(t,e){this.endTime=a.now(),this.params||(this.params={}),this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],14:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||s),"/"===i.pathname&&(r[t]=i),i}},{}],15:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(18);e.exports=r},{}],16:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),o(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(28),s=t(29),c=t("ee").get("tracer"),f=t("loader"),u=t(21),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var l=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(l,function(t,e){d[e]=i(p,e,!0,"api")}),d.addPageAction=i(p,"addPageAction",!0),d.setCurrentRouteName=i(p,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),o("err",[t,f.now(),!1,e])}},{}],17:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],20:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],21:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[s,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:i}},{}],22:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,s=t(30);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],23:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],24:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(c&&c<r.startTime)return;l("lcp",[r])}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){if(t instanceof v&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,l("timing",["fi",e,n])}}function s(t){"hidden"===t&&(c=p.now(),l("pageHide",[c]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,f,u,d,l=t("handle"),p=t("loader"),h=t(27),m=t(19),v=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(w){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(w){}d=new PerformanceObserver(o);try{d.observe({type:"layout-shift",buffered:!0})}catch(w){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(t){document.addEventListener(t,a,m(!1))})}h(s)}},{}],25:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<o.length;s++)i=o[s],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(31)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],26:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],27:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(19);e.exports=r;var o,a,s;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],28:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],29:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],30:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!p.aborted||o){t&&a&&t(n,r,i);for(var s=e(i),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var l=d[y[n]];return l&&l.push([x,n,r,s]),s}}function o(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||i(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:o,addEventListener:o,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function o(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var c="nr@context",f=t("gos"),u=t(28),d={},l={},p=e.exports=i();e.exports.getOrSetContext=o,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!T++){var t=O.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(R,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+O.offset],null,"api"),s("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=h+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){s("mark",["domContent",a()+O.offset],null,"api")}var a=t(22),s=t("handle"),c=t(28),f=t("ee"),u=t(26),d=t(23),l=t(17),p=t(19),h=l.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,w="addEventListener",g="attachEvent",y=m.XMLHttpRequest,x=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var E=""+location,R={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1212.min.js"},S=y&&x&&x[w]&&!/CriOS/.test(navigator.userAgent),O=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:S,userAgent:u,disabled:b};if(!b){t(16),t(24),v[w]?(v[w]("DOMContentLoaded",o,p(!1)),m[w]("load",r,p(!1))):(v[g]("onreadystatechange",i),m[g]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var T=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var o,a,u,l;try{a=this,o=d(arguments),u="function"==typeof r?r(o,a):r||{}}catch(p){i([p,"",[o,a,c],u],t)}s(n+"start",[o,a,c],u,f);try{return l=e.apply(a,o)}catch(h){throw s(n+"err",[o,a,h],u,f),h}finally{s(n+"end",[o,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,i,c,o))}function s(n,r,o,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=l,n}function i(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function s(t,e){var n=e(t);return n[l]=t,o(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(29),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,13,4,3]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="VfGWzOLDyrmGv8t-bb5sGqNb8fyIhHvgC7cfRSBeKSw" />
+
+    <title>
+      Adobe Fonts | 浏览不限数量的字体
+    </title>
+
+    <script>document.documentElement.classList.add('wf-loading');</script>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="ZHpgftyTo5NzOJSKumrT1fy6pkxQEDBmg1anF3/abhh9er6IfmdXhVE6YNRQ1OlNX+JV4Dfyk89hfv6CkVhXFQ==" />
+    <script src="/packs/js/webcomponents-ad172c3b20d6f1d0e9dd.js"></script>
+
+    <link rel="stylesheet" media="all" href="/assets/spectrum-9b95289e9d493eb827026d994c18db9b50e0385919ef4dbbc423f5eaec096642.css" />
+    <script src="/packs/js/spectrum-6e4320537751f5156b61.js"></script>
+
+    <link rel="stylesheet" media="screen" href="https://wwwimages2.adobe.com/etc/beagle/public/globalnav/adobe-privacy/latest/privacy.min.css" />
+
+      <meta name="description" content="Adobe Fonts 与世界顶级字体设计公司合作，每天为设计师推出数千种漂亮的字体。
+                    不需担心授权许可，您可以在 Web 或桌面应用程序上使用 Adobe Fonts 上提供的字体。" />
+
+        <meta name="keywords" content="font, fonts, free fonts, typekit, type kit, font kit, web fonts, webfonts, font type, online fonts, free online font, internet fonts, free internet fonts, script font, text font, bold font, best fonts, cool font, free cool fonts, beautiful font, free beautiful fonts, sans fonts, serif fonts, free text font, real fonts, font library, fonts for free, font-face, variable fonts, responsive fonts, adobe, adobe fonts, sync fonts, download fonts, creative cloud, creative cloud fonts" />
+
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Adobe Fonts">
+<meta property="og:description" content="Adobe Fonts partners with the world’s leading type foundries to bring thousands of beautiful fonts to designers every day. No need to worry about licensing, and you can use fonts from Adobe Fonts on the web or in desktop applications.">
+<meta property="og:image" content="https://fonts.adobe.com/adobe-fonts-social.jpg">
+<meta property="og:image:type" content="image/jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://fonts.adobe.com/">
+<meta property="og:site_name" content="Adobe Fonts">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Adobe Fonts">
+<meta name="twitter:description" content="Adobe Fonts partners with the world’s leading type foundries to bring thousands of beautiful fonts to designers every day. No need to worry about licensing, and you can use fonts from Adobe Fonts on the web or in desktop applications.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@AdobeFonts">
+<meta name="twitter:creator" content="@AdobeFonts">
+<meta name="twitter:image" content="https://fonts.adobe.com/adobe-fonts-social.jpg">
+
+<meta name="apple-itunes-app" content="app-id=852473028">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Adobe Fonts",
+  "url": "https://fonts.adobe.com",
+  "logo": "https://fonts.adobe.com/adobe-fonts-google-search-icon.png",
+  "sameAs": [
+    "https://twitter.com/AdobeFonts"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "url": "https://fonts.adobe.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://fonts.adobe.com/search?query={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+
+
+
+    <link rel="search"
+      href="/opensearch.xml"
+      type="application/opensearchdescription+xml"
+      title="Typekit" />
+    <link rel="canonical" href="https://fonts.adobe.com/" />
+
+  </head>
+
+  <body class="global-nav controller-static-pages action-home spectrum spectrum-Type spectrum-layout-body" ng-app="NeueApp">
+    <script id="user-pref-data" type="text/ng-data">
+      {"hide_tag_feedback_notification":"false"}
+    </script>
+
+    <script id="suspended-account-data" type="text/ng-data">
+      {"hasSuspendedAccount":false}
+    </script>
+
+    <script id="filtered-family-list-sort-modes" type="text/ng-data">
+      [{"label":"特色","value":"featured_rank"},{"label":"名称","value":"alpha"},{"label":"最新","value":"newest"}]
+    </script>
+
+    <div class="spectrum spectrum--light">
+  <div class="section-notifications section-notifications--top"
+       ng-controller="NotificationController as notification"
+       ng-show="notification.hasMessages()"
+       ng-cloak>
+
+    
+    <div ng-repeat="message in notification.getMessages() track by message.id" ng-cloak>
+      <div class="section-notifications--top">
+        <div ng-class="['spectrum-Toast', notification.getToastClass(message)]" ng-if="message.type === 'neutral' || message.type === 'font_game_banner'" data-id="too-many-fonts-notification">
+          <svg class="spectrum-Icon spectrum-UIIcon-SuccessMedium spectrum-Toast-typeIcon" focusable="false" aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-SuccessMedium"/>
+          </svg>
+          <div class="spectrum-Toast-content"><span ng-bind-html="message.text"></span></div>
+          <div class="spectrum-Toast-buttons">
+            <button ng-if="message.actionLink" ng-click="notification.handleActionClick(message.actionLink)" class="spectrum-Button spectrum-Button--overBackground spectrum-Button--quiet">
+              <span class="spectrum-Button-label">{{message.actionLabel}}</span>
+            </button>
+            <button ng-click="notification.handleNeutralTopNotificationClose(message)" class="spectrum-ClearButton spectrum-ClearButton--medium spectrum-ClearButton--overBackground">
+              <svg class="spectrum-Icon spectrum-UIIcon-CrossMedium" focusable="false" aria-hidden="true">
+                <use xlink:href="#spectrum-css-icon-CrossMedium" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <header class="spectrum-grid--fluid adobe-fonts-marketplace-header"
+        ng-controller="MarketplaceHeaderController as marketplaceHeaderCtrl"
+        ng-cloak>
+
+  <script id="/user_info" type="text/ng-data">
+    {"activity_state":"new","days_since_sync_activity":-1,"plan":null,"logged_in_on_server":false,"logged_in_as_admin":false}
+  </script>
+
+  <div class="spectrum-grid-row">
+    <div class="adobe-fonts-header__navigation-container">
+      <sp-theme color="lightest" scale="medium">
+        <af-navbar-combo
+          size="{{ marketplaceHeaderCtrl.viewportSize }}"
+          class="navbar-header"
+          subNavLinks="[{&quot;label&quot;:&quot;主页&quot;,&quot;url&quot;:&quot;/&quot;},{&quot;label&quot;:&quot;所有字体&quot;,&quot;url&quot;:&quot;/fonts&quot;},{&quot;label&quot;:&quot;推荐&quot;,&quot;url&quot;:&quot;/recommendations&quot;},{&quot;label&quot;:&quot;字体包&quot;,&quot;url&quot;:&quot;/collections&quot;},{&quot;label&quot;:&quot;字体设计公司&quot;,&quot;url&quot;:&quot;/foundries&quot;},{&quot;label&quot;:&quot;关于&quot;,&quot;url&quot;:&quot;/about&quot;}]"
+          user="false"
+          manageLink="{&quot;label&quot;:&quot;管理字体&quot;,&quot;url&quot;:&quot;/my_fonts&quot;}">
+        </af-navbar-combo>
+      </sp-theme>
+    </div>
+
+    <div class="adobe-fonts-header__global-nav">
+      <div class="__adobeprofile">
+  <a class="adobe-fonts-header__sign-in" href="https://fonts.adobe.com/login/adobe?url=https%3A%2F%2Ffonts.adobe.com%2Ffonts">登录</a>
+</div>
+
+<script id="/profileMenu/i18n" type="application/json">
+  {"account_links":"帐户链接","api_tokens":"API 令牌"}
+</script>
+
+  <script src="https://wwwimages2.adobe.com/etc/beagle/public/globalnav/adobe-profile/latest/adobe-profile.min.js"></script>
+  <link rel="stylesheet" media="screen" href="https://wwwimages2.adobe.com/etc/beagle/public/globalnav/adobe-profile/latest/adobe-profile.min.css" />
+
+
+      <script>
+  if (tk.ImsLib) {
+    window.adobeid = tk.ImsLib.init({
+      clientId: 'TypeKit2',
+
+
+        marketplaceTheme: true,
+
+      globalNavSections: ["logo", "profile"],
+      locale: 'zh_CN',
+      adobe_language_tag: 'cn',
+      scope: 'creative_cloud,sao.typekit,openid,sao.cce_private,AdobeID,gnav,additional_info.roles',
+      ssoLoginUrl: 'https://fonts.adobe.com/handle_sso_login',
+      ssoLogoutUrl: 'https://fonts.adobe.com/handle_sso_logout',
+      tkRequestInfo: {"cookieName":"tk_iat_production","currentTimeOnServer":1642006282,"isAfterLoginAttempt":false,"requestMethod":"GET","requestURI":"/","loggedInOnServer":false,"adobeProfileID":null,"isLegacyUser":null}
+    });
+  }
+</script>
+<script type="text/javascript" src="https://static.adobelogin.com/imslib/imslib.min.js?locale=zh_CN"></script>
+
+
+    </div>
+  </div>
+</header>
+
+
+    <main class="spectrum spectrum--light">
+      <form id="visual-search-upload-form" class="visual-search-form visual-search-main" enctype="multipart/form-data" action="/fonts/vs" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="548ADEb6xWFwN0EMU4BUnS6xQnQcz+QasFYrxL9PAn3+j9765A4xd1I1tVK5Pm4Fjemx2HstR7NSfnJRUc07cA==" />
+  <label>
+
+    <input type="file"
+           accept="image/*"
+           name="image"
+           class="visual-search-file-input"
+           tabindex="0"
+           aria-label="上传照片以扫描相似类型">
+
+  </label>
+</form>
+<form id="visual-search-drag-and-drop-form" class="visual-search-drag-and-drop-form" enctype="multipart/form-data" action="/fonts/vs" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="71sIP4FNFv96B0eH1k9Hfkas0nTaeIvgimY8RKh+RRP2W9bJI7ni6VgFs9k88X3m5fQh2L2aKEloTmXRRvx8Hg==" />
+  <div class="visual-search-drop-zone visual-search-fullscreen">
+    <div class="visual-search-fullscreen__frame">
+      <a href="" title="Cancel search" class="visual-search-drop-zone__close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" height="12" width="12" class="close-icon"><path d="M12,9.7a.34.34,0,0,1-.08.21l-2,2a.31.31,0,0,1-.41,0L6,8.42l-3.5,3.5a.31.31,0,0,1-.41,0l-2-2a.31.31,0,0,1,0-.41L3.58,6,.08,2.5a.31.31,0,0,1,0-.41l2-2a.31.31,0,0,1,.41,0L6,3.58,9.5.08a.31.31,0,0,1,.41,0l2,2a.31.31,0,0,1,0,.41L8.42,6l3.5,3.5A.33.33,0,0,1,12,9.7Z"></path></svg>
+
+      </a>
+      <div class="text">
+        <div class="visual-search-illustration"><img alt="正在扫描您的文件以查找相似类型" src="/assets/svg/image-type-ecdcd82429f96249c09faadcba8cb2ef866fead025cd62f019d8d0385a04b79d.svg" /></div>
+        <span class="spectrum-Body filename"></span>
+        <span class="spectrum-Body--large visual-search-error__text"></span>
+        <span class="spectrum-Body visual-search-error__details"></span>
+        <span class="spectrum-Body--large loading-text">正在扫描文件 - 请稍候</span>
+      </div>
+    </div>
+  </div>
+
+  <input type="file" accept="image/*" name="image" class="visual-search-file-input" id="visual-search-file-input-drag-and-drop">
+</form>
+<script id="/visual_search/i18n" type="application/json">
+  {"image_downsampler":{"file_format_not_supported":{"text":"文件格式不受支持","details":"支持的格式为 gif、jpg 和 png"},"file_could_not_be_processed":{"text":"无法处理文件","details":"上载 gif、jpg 或 png 格式的新文件"},"file_is_too_large":{"text":"文件过大","details":"最大大小为 5 MB"}},"visual_search":{"something_went_wrong":{"text":"出现错误","details":"尝试上传其他文件"},"uploading_multiple_files":{"text":"不支持上传多个文件","details":"一次使用一个文件重试"}}}
+</script>
+
+
+      
+
+
+  <sp-theme color="lightest" scale="medium">
+    <script id="/preloaded_homepage_data" type="text/ng-data">
+      {"browse_by_classifications":[{"title":"宋体","src":"/assets/home/browse_filter_cards/classification_zh_CN_so-1632c72a168b8da74ff97972e3e10b6183eed70c90fd3eda0cb69cc3d7fa70b2.png","href":"/fonts?browse_mode=zh-Hans\u0026filters=cl%3Aso\u0026languages=zh-Hans"},{"title":"黑体","src":"/assets/home/browse_filter_cards/classification_zh_CN_he-a6f5607a56918e1340a9047a6ac06c43e017760dcee43c06467ef4b1798f01df.png","href":"/fonts?browse_mode=zh-Hans\u0026filters=cl%3Ahe\u0026languages=zh-Hans"},{"title":"手写","src":"/assets/home/browse_filter_cards/classification_zh_CN_ha-a61ed72434da3a2dd1542ca4c6c7ee6aabe8991ea2440ca6a104eba4a6e23150.png","href":"/fonts?browse_mode=zh-Hans\u0026filters=cl%3Aha\u0026languages=zh-Hans"},{"title":"装饰字体","src":"/assets/home/browse_filter_cards/classification_zh_CN_de-8f3ec81e7da05a1856e04aa8273db5c15f2424205b12db024d53cab8e7b5346d.png","href":"/fonts?browse_mode=zh-Hans\u0026filters=cl%3Ade\u0026languages=zh-Hans"}],"browse_by_languages":[{"title":"日语","src":"/assets/home/browse_filter_cards/language_ja-240fdabbff743615253c51f34e31e0a99630027ad69d98b1339dd35fecd8654b.png","href":"/fonts?languages=ja"},{"title":"朝鲜语","src":"/assets/home/browse_filter_cards/language_ko-83bba45253b72365827278b13ddfbd7c1cd28efcad4ee360f388730ea0425914.png","href":"/fonts?languages=ko"},{"title":"阿拉伯语","src":"/assets/home/browse_filter_cards/language_ar-332584d22c44d90db2296d7ed568293ad6be6b70cf6979da99e08e663b8cf9d2.png","href":"/fonts?languages=ar"},{"title":"俄语","src":"/assets/home/browse_filter_cards/language_ru-2e2512202cc2d6f059851fcb8f6ee293b8156b6d0aac29e428c724816b2b0288.png","href":"/fonts?languages=ru"}],"browse_by_tags":[{"title":"书法","description":"具有精致的手写体和花体的字体","src":"/assets/home/browse_filter_cards/tag_calligraphic-7b37d29d0ad0b18803a04b69f2d41055397482a2e66e6dee9c1efafb8935f076.png","href":"/fonts?browse_mode=zh-Hans\u0026tag=calligraphic"},{"title":"友好","description":"令人感到舒适和友善的字体","src":"/assets/home/browse_filter_cards/tag_friendly-345f6dee483e8fbe024f79ba47ecee88c65f34e7cf1324977178aa5207f5a2fb.png","href":"/fonts?browse_mode=zh-Hans\u0026tag=friendly"},{"title":"洁净","description":"以无装饰的简单字母形式为特征的字体","src":"/assets/home/browse_filter_cards/tag_clean-dbc441a0229c90e5ff8d1314ac4dc54a5ce661f864f967601988537060704e57.png","href":"/fonts?browse_mode=zh-Hans\u0026tag=clean"},{"title":"时髦独特","description":"形状新奇的有趣或怀旧的字体","src":"/assets/home/browse_filter_cards/tag_funky-67b2f127f5097b96dbef2141510ae0f7d4b8949c724620b7f561495a80b6b7b7.png","href":"/fonts?browse_mode=zh-Hans\u0026tag=funky"}]}
+    </script>
+
+      <script id="/recommendations/preloaded" type="text/ng-data">
+        {"familiesPerPage":4,"isPersonalized":false,"recommendationTypes":[{"key":"all","label":"全部"}]}
+      </script>
+
+    <script id="/recommendations/i18n" type="text/ng-data">{"neue.fontpacks.sync_error_message":"尝试获取字体包时出错。某些字体无法被激活。请重试。","neue.fontpacks.unsync_error_message":"尝试停用字体包时出错。某些字体无法被停用。请重试。","recommendations.activation_success":"您已激活 %{family}","recommendations.deactivation_success":"您已停用 %{family}","recommendations.family_card_foundry_subheading":"来自 %{foundry}"}</script>
+
+    <div ng-controller="MarketplaceHomeController as homeCtrl">
+      <div class="spectrum-grid--fluid">
+        <div class="spectrum-grid-row">
+          <div class="spectrum-grid-col-xs-12">
+            <div class="homepage--searchbar-hero-section">
+              <div class="homepage--searchbar-section-container">
+                <h3 class="spectrum-Heading--subtitle1 homepage--searchbar-section-heading">找到适合您下一个项目的字体</h3>
+                <div class="homepage--searchbar-section">
+                  <af-search-bar class="homepage__search-bar"></af-search-bar>
+                </div>
+                <a class="spectrum-ActionButton browse-all-fonts-link" href="/fonts">
+                  <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Browse">
+                    <use xlink:href="#spectrum-icon-18-Browse" />
+                  </svg>
+                  <span class="spectrum-ActionButton-label">浏览所有字体</span>
+                </a>
+                <button id="search-by-image-link" class="spectrum-ActionButton" ng-click="homeCtrl.handleSearchByImageClick()">
+                  <svg class="spectrum-Icon spectrum-Icon--sizeS" focusable="false" aria-hidden="true" aria-label="Camera">
+                    <use xlink:href="#spectrum-icon-18-Camera" />
+                  </svg>
+                  <span class="spectrum-ActionButton-label">按图像搜索</span>
+                </button>
+              </div>
+              <div>
+                <img class="homepage--searchbar-section-image" src="/assets/home/search_bar_hero_image-14c9800289341681c71614822d4c46dcef880d27b89d14b23868c8a85eb99f79.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="subscribe-section">
+    <h3 class="spectrum-Heading--subtitle1 homepage--browse-filters-title margin-top--xlarge">
+  立即尽情使用超过 20,000 种字体
+</h3>
+<div class="spectrum-grid-row margin-top--xsmall">
+  <div class="spectrum-grid-col-xs-12">
+    <p class="spectrum-Body homepage--browse-filters-description">还没有订阅？找到适合您的 Creative Cloud 计划</p>
+    <a href="https://fonts.adobe.com/login/adobe?url=https%3A%2F%2Ffonts.adobe.com%2Ffonts"
+       class="spectrum-Button spectrum-Button--primary homepage--browse-all-button subscribe-section__sign-in-link">
+      <span class="spectrum-Button-label">
+        登录
+      </span>
+    </a>
+  </div>
+</div>
+
+
+  <div class="spectrum-grid-row">
+    <div class="spectrum-grid-col-xs-12 spectrum-grid-col-sm-6">
+  <div class="subscribe-section--plans-section">
+    <h5 class="spectrum-Heading--subtitle3 subscribe-section--plans-title">
+      单个应用程序 Creative Cloud 订阅
+    </h5>
+    <p class="spectrum-Body subscribe-section--plans-description">
+      订阅任意 Adobe Creative 应用程序，例如 Photoshop、Illustrator 或 Xd，即可免费访问完整的 Adobe Fonts 库。
+    </p>
+    <div class="subscribe-section--image-wrapper">
+      <img class="subscribe-section--plans-image" src="/assets/shared/app_icons-58109c3bccf2b4db0813a832f9d90cda1be3a7cd04105fb602644a9a98df0bc1.png" />
+    </div>
+    <div class="subscribe-section--link-wrapper">
+      <!-- plans_link_class is for analytics purposes -->
+      <a class="spectrum-Button spectrum-Button--cta subscribe-section--single_app_plans_link"
+         href="https://www.adobe.com/cn/creativecloud/plans.html"
+         target="_blank">
+        查看计划
+      </a>
+    </div>
+  </div>
+</div>
+
+    <div class="spectrum-grid-col-xs-12 spectrum-grid-col-sm-6">
+  <div class="subscribe-section--plans-section">
+    <h5 class="spectrum-Heading--subtitle3 subscribe-section--plans-title">
+      Creative Cloud Express
+    </h5>
+    <p class="spectrum-Body subscribe-section--plans-description">
+      Creative Cloud Express includes access to the Adobe Fonts library at no additional cost
+    </p>
+    <div class="subscribe-section--image-wrapper">
+      <img class="subscribe-section--plans-image" src="/assets/shared/spark-86349cd165fdee6a411b9483131355545349de939fbe5204f9ca526998b3d27c.png" />
+    </div>
+    <div class="subscribe-section--link-wrapper">
+      <!-- plans_link_class is for analytics purposes -->
+      <a class="spectrum-Button spectrum-Button--cta subscribe-section--spark_plans_link"
+         href="https://www.adobe.com/cn/express"
+         target="_blank">
+        查看计划
+      </a>
+    </div>
+  </div>
+</div>
+
+  </div>
+    <div class="subscribe-section--signup-section">
+      <div class="spectrum-grid-row">
+        <div class="spectrum-grid-col-xs-5 spectrum-grid-col-xs-offset-2">
+          <p class="spectrum-Body--large subscribe-section--signup-text">
+            注册<strong>免费</strong> Adobe ID，试用我们超过 1,000 种字体的基本库
+          </p>
+        </div>
+        <div class="spectrum-grid-col-xs-5 spectrum-grid-col-sm-3">
+          <button class="spectrum-Button spectrum-Button--cta subscribe-section--signup-button">
+            <span class="spectrum-Button-label">
+              <a class="subscribe-section--signup-link"
+                 href="https://ims-na1.adobelogin.com/ims/authorize/v1?client_id=TypeKit2&amp;el=true&amp;idp_flow=create_account&amp;locale=zh_CN&amp;redirect_uri=https%3A%2F%2Ffonts.adobe.com%2Flogin%2Fsso%3Fback_to%3Dhttps%253A%252F%252Ffonts.adobe.com%252F&amp;response_type=code&amp;scope=creative_cloud%2Csao.typekit%2Copenid%2Csao.cce_private%2CAdobeID%2Cgnav%2Cadditional_info.roles">
+                 注册
+              </a>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+          <div class="recommendations-page" ng-controller="RecommendationsController as ctrl">
+            <h3 class="spectrum-Heading--subtitle1 homepage--browse-filters-title margin-top--xlarge">
+  Adobe Fonts 快速入门
+</h3>
+<div class="spectrum-grid-row margin-top--xsmall">
+  <div class="spectrum-grid-col-xs-12">
+    <p class="spectrum-Body homepage--browse-filters-description">尽情使用您的 Creative Cloud 订阅免费附送的数千种字体</p>
+    <a href="/recommendations"
+       class="spectrum-Button spectrum-Button--primary homepage--browse-all-button recommendations__see-more-link">
+      <span class="spectrum-Button-label">
+        查看更多
+      </span>
+    </a>
+  </div>
+</div>
+
+            <div class="spectrum-grid-row">
+              <div class="spectrum-grid-col-xs-12 spectrum-grid-col-sm-6 spectrum-grid-col-md-4"
+     ng-repeat="column in ctrl.columns">
+  <div class="af-specimen-card-wrapper adobe-fonts-carousel-item"
+       ng-repeat="recommendation in ctrl.recommendationsByColumn[column] track by ctrl.getIdentifier(recommendation)"
+       ng-show="!ctrl.recommendationTypeChanged">
+    <af-specimen-card
+      class="af-specimen-card"
+      tabindex="0"
+      title="{{recommendation.name}}"
+      subtitle="{{ctrl.getSpecimenCardSubtitle(recommendation)}}"
+      ng-attr-activated="{{ctrl.isActivated(recommendation) ? true : undefined}}"
+      href="/fonts/{{recommendation.slug}}"
+      data-family-slug="{{recommendation.slug}}"
+      ng-click="ctrl.handleRecommendationClick(recommendation)"
+      ng-if="recommendation.type === 'families'">
+      <img class="af-specimen-card-image" ng-src="{{recommendation.specimen_images[0]}}"
+           ng-show="{{!!recommendation.specimen_images[0]}}" />
+      <div class="af-specimen-card-example-text-wrapper"
+           ng-show="{{!recommendation.specimen_images[0]}}"
+           ng-style="ctrl.getExampleTextStyle(recommendation)"
+           ng-class="ctrl.getTextDirectionClass(recommendation)">
+              <span class="af-specimen-card-example-text" display-in-font="ctrl.getDisplayFont(recommendation)" ng-cloak>
+                {{ctrl.getExampleText(recommendation)}}
+              </span>
+      </div>
+    </af-specimen-card>
+    <af-specimen-card
+      class="af-specimen-card"
+      tabindex="0"
+      title="{{recommendation.name}}"
+      subtitle="字体包"
+      ng-attr-activated="{{ctrl.isActivated(recommendation) ? true : undefined}}"
+      href="/collections/{{recommendation.slug}}"
+      data-fontpack-slug="{{recommendation.slug}}"
+      ng-click="ctrl.handleRecommendationClick(recommendation)"
+      ng-if="recommendation.type === 'fontpacks'">
+      <img class="af-specimen-card-image" ng-src="{{recommendation.thumbnail_url}}" />
+    </af-specimen-card>
+    <div class="font-variations-pair" ng-if="recommendation.type === 'font_pairs'">
+      <div class="adobe-fonts-carousel-item">
+        <font-pairing-card on-activate="ctrl.handleActivationClick([pair['header_font'], pair['body_font']])"
+                           on-deactivate="ctrl.handleDeactivationClick([pair['header_font'], pair['body_font']])"
+                           text-sample-primers="ctrl.textSampleData.textSamplePrimers"
+                           text-samples="ctrl.textSampleData.textSamples"
+                           user-logged-in="false"
+                           show-required-action="false"
+                           family-slug="recommendation['header_font'].family.slug"
+                           variation="recommendation['header_font']"
+                           pair-variation="recommendation['body_font']"
+                           selected-feedback="recommendation['body_font'].selectedFeedback"
+                           ng-click="ctrl.handleRecommendationClick(recommendation)"
+                           font-pair-id="recommendation['id']"
+                           recommendation-index="ctrl.recommendations.indexOf(recommendation)">
+        </font-pairing-card>
+      </div>
+    </div>
+    <af-tag-card
+      class="af-specimen-card tag-background"
+      tabindex="0"
+      ng-class="ctrl.getTagBackgroundClass(recommendation.key)"
+      href="/fonts?tag={{recommendation.key}}"
+      tag="{{recommendation.label}}"
+      ng-click="ctrl.handleRecommendationClick(recommendation)"
+      ng-if="recommendation.type === 'tags'"
+      ng-cloak>
+        <span class="af-tag-card-example-text" display-in-font="ctrl.getDisplayFont(recommendation)" ng-cloak>
+          {{recommendation.label}}
+        </span>
+    </af-tag-card>
+  </div>
+  <div class="recommendations-page--empty-card" ng-class="className"
+       ng-repeat="className in ctrl.emptyStateClassesByColumn[column] track by $index"
+       ng-show="ctrl.isLoading">
+  </div>
+</div>
+
+            </div>
+          </div>
+
+          <h3 class="spectrum-Heading--subtitle1 homepage--browse-filters-title">
+  可视搜索
+</h3>
+<p class="spectrum-Body homepage--browse-filters-description">借助 Adobe Sensei 的强大功能匹配图像中的字体</p>
+<div class="spectrum-grid-center-xs homepage--drop-file-here">
+  <div id="drop-file-here" class="drop-file-here">
+  <div class="drop-file-here__region">
+    <div id="drop-file-here__upload" class="drop-file-here__border">
+      <div class="drop-file-here__image-container">
+        <img class="drop-file-here__image margin-top--small" alt="" src="/assets/svg/visualsearch-illustration-79539ff2683586b8134565be59751ed019dee5985beb7de596a27b8baf4911d7.svg" />
+      </div>
+      <div class="drop-file-here__text-container">
+        <h2 class="spectrum-Heading--pageTitle margin-bottom--xsmall drop-file-here__heading">将您的图像拖放到此处</h2>
+        或从计算机<a id="drop-file-here__link" class="spectrum-Link drop-file-here__link" href="">选择图像</a>。
+        <p class="spectrum-Body--italic margin-bottom--medium drop-file-here__secondary">接受的文件类型: jpg, png, gif</p>
+      </div>
+
+      <form id="visual-search-drag-and-drop-form" class="visual-search-drag-and-drop-form" enctype="multipart/form-data" action="/fonts/vs" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="ApA2nbTy+XbhODWafooqcS+K3tU1AcJNQmXI2p1L42cbkOhrFgYNYMM6wcSUNBDpjNIteVLjYeSgTZFPc8naag==" />
+          <div id="drop-file-here-fullscreen" class="visual-search-drop-zone visual-search-fullscreen">
+            <div id="drop-file-here-fullscreen_frame" class="visual-search-fullscreen__frame vertical-align">
+              <a href="" title="取消搜索" class="visual-search-drop-zone__close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" height="12" width="12" class="close-icon"><path d="M12,9.7a.34.34,0,0,1-.08.21l-2,2a.31.31,0,0,1-.41,0L6,8.42l-3.5,3.5a.31.31,0,0,1-.41,0l-2-2a.31.31,0,0,1,0-.41L3.58,6,.08,2.5a.31.31,0,0,1,0-.41l2-2a.31.31,0,0,1,.41,0L6,3.58,9.5.08a.31.31,0,0,1,.41,0l2,2a.31.31,0,0,1,0,.41L8.42,6l3.5,3.5A.33.33,0,0,1,12,9.7Z"></path></svg>
+
+              </a>
+              <div class="text">
+                <div class="visual-search-illustration"><img alt="正在扫描您的文件以查找相似类型" src="/assets/svg/image-type-ecdcd82429f96249c09faadcba8cb2ef866fead025cd62f019d8d0385a04b79d.svg" /></div>
+                <div class="spectrum-grid-row spectrum-grid-center-xs">
+                  <span class="spectrum-Body--large filename"></span>
+                </div>
+                <div class="spectrum-grid-row spectrum-grid-center-xs">
+                  <span class="spectrum-Body--large visual-search-error__text"></span>
+                </div>
+                <div class="spectrum-grid-row spectrum-grid-center-xs">
+                  <span class="spectrum-Body visual-search-error__details"></span>
+                </div>
+                <div class="spectrum-grid-row spectrum-grid-center-xs">
+                  <span class="spectrum-Body--large loading-text">正在扫描文件 - 请稍候</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <input type="file" accept="image/*" name="image" class="visual-search-file-input" id="visual-search-file-input-drag-and-drop">
+</form>    </div>
+  </div>
+
+
+
+  </div>
+
+</div>
+
+          <h3 class="spectrum-Heading--subtitle1 homepage--browse-filters-title">
+  进一步了解
+</h3>
+<p class="spectrum-Body homepage--browse-filters-description">深入挖掘字体的世界，在新的地方寻找灵感</p>
+<div class="spectrum-grid-row">
+  <div class="spectrum-grid-col-sm-4 homepage--browse-filter-card-wrapper homepage--closer-look-card-wrapper" ng-class="homeCtrl.getSmallScreenClass()" ng-cloak>
+    <af-browse-filter-card
+      title="特色字体设计公司"
+      description="展示为 Adobe Fonts 做出贡献的字体设计公司"
+      href="/foundries"
+      src="/assets/home/a_closer_look/featured_foundry-46ce9d7cd65026a8243379b1274a857a43c7ef2727c0d2bf404a34d1e9093d9b.png">
+    </af-browse-filter-card>
+  </div>
+  <div class="spectrum-grid-col-sm-4 homepage--browse-filter-card-wrapper" ng-class="homeCtrl.getSmallScreenClass()" ng-cloak>
+    <af-browse-filter-card
+      title="按设计师浏览"
+      description="认识字体背后的人"
+      href="/designers"
+      src="/assets/home/a_closer_look/designer-5162e06eb4405f4e9e17a052a917a617c9117b65129b4483b19c693f15c6cfaa.png">
+    </af-browse-filter-card>
+  </div>
+  <div class="spectrum-grid-col-sm-4 homepage--browse-filter-card-wrapper" ng-class="homeCtrl.getSmallScreenClass()" ng-cloak>
+    <af-browse-filter-card
+      title="博客上的最新消息"
+      description="Creative Cloud 中的字体，一切皆新"
+      href="https://theblog.adobe.com/creativity/typography/"
+      src="/assets/home/a_closer_look/blog-f657906c3b0798e6fc84d8aa85724ad0910605fc1130b65c87c65d23b09d2b7b.png">
+    </af-browse-filter-card>
+  </div>
+  <div class="spectrum-grid-col-sm-4 homepage--browse-filter-card-wrapper" ng-class="homeCtrl.getSmallScreenClass()" ng-cloak>
+    <af-browse-filter-card
+      title="Behance 上的 Adobe Fonts"
+      description="观看我们由排版专家主讲的直播"
+      href="https://www.behance.net/adobefonts/projects"
+      src="/assets/home/a_closer_look/behance-ed0ec589a84a3c10aacd8db2ebdf57f85696359df993194b8e361292504571c1.png">
+    </af-browse-filter-card>
+  </div>
+  <div class="spectrum-grid-col-sm-4 homepage--browse-filter-card-wrapper" ng-class="homeCtrl.getSmallScreenClass()" ng-cloak>
+    <af-browse-filter-card
+      title="字体包"
+      description="适合任何场合的精选收藏集"
+      href="/collections"
+      src="/assets/home/a_closer_look/font_packs-55b2dea600bf4716746cc0dbe81fbe3af0c0c16c228807c27f69165819a77de4.png">
+    </af-browse-filter-card>
+  </div>
+  <div class="spectrum-grid-col-sm-4 homepage--browse-filter-card-wrapper" ng-class="homeCtrl.getSmallScreenClass()" ng-cloak>
+    <af-browse-filter-card
+      title="详细了解 Adobe Fonts"
+      description="关于服务工作原理的详细信息以及更多信息的链接"
+      href="/about"
+      src="/assets/home/a_closer_look/learn_more-2c0f5161142acdb34121edc0128341e7c83eff9ef0f45d85eb9c9e6e99aeffe3.png">
+    </af-browse-filter-card>
+  </div>
+</div>
+
+
+        <div class="spectrum-grid-row">
+          <div class="spectrum-grid-col-xs-12">
+            <div class="homepage--video-container">
+              <div class="homepage--video-iframe-wrapper">
+                <iframe class="homepage--video"
+                        src="https://www.youtube.com/embed/H3rLcEAousU"
+                        title="YouTube 视频播放器"
+                        allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="spectrum-Heading--subtitle1 homepage--browse-filters-title margin-top--xlarge">
+  按标签浏览字体
+</h3>
+<div class="spectrum-grid-row margin-top--xsmall">
+  <div class="spectrum-grid-col-xs-12">
+    <p class="spectrum-Body homepage--browse-filters-description">使用提振项目情绪的词语为想法赋予您的观点</p>
+    <a href="/fonts"
+       class="spectrum-Button spectrum-Button--primary homepage--browse-all-button browse-by-tags-__browse-all-link">
+      <span class="spectrum-Button-label">
+        浏览全部
+      </span>
+    </a>
+  </div>
+</div>
+
+        <div class="spectrum-grid-row">
+          <div class="spectrum-grid-col-sm-3 homepage--browse-filter-card-wrapper" ng-class="homeCtrl.getSmallScreenClass()" ng-repeat="tag in homeCtrl.browseByTags" ng-cloak>
+            <af-browse-filter-card
+              title="{{tag.title}}"
+              description="{{tag.description}}"
+              href="{{tag.href}}"
+              ng-src="{{tag.src}}">
+            </af-browse-filter-card>
+          </div>
+        </div>
+
+        <h3 class="spectrum-Heading--subtitle1 homepage--browse-filters-title margin-top--xlarge">
+  按分类浏览字体
+</h3>
+<div class="spectrum-grid-row margin-top--xsmall">
+  <div class="spectrum-grid-col-xs-12">
+    <p class="spectrum-Body homepage--browse-filters-description">使用技术特性筛选字体</p>
+    <a href="/fonts"
+       class="spectrum-Button spectrum-Button--primary homepage--browse-all-button browse-by-classifications__browse-all-link">
+      <span class="spectrum-Button-label">
+        浏览全部
+      </span>
+    </a>
+  </div>
+</div>
+
+        <div class="spectrum-grid-row">
+          <div class="spectrum-grid-col-sm-3 homepage--browse-filter-card-wrapper" ng-class="homeCtrl.getSmallScreenClass()" ng-repeat="classification in homeCtrl.browseByClassifications" ng-cloak>
+            <af-browse-filter-card
+              title="{{classification.title}}"
+              href="{{classification.href}}"
+              ng-src="{{classification.src}}">
+            </af-browse-filter-card>
+          </div>
+        </div>
+
+        <h3 class="spectrum-Heading--subtitle1 homepage--browse-filters-title margin-top--xlarge">
+  按语言浏览字体
+</h3>
+<div class="spectrum-grid-row margin-top--xsmall">
+  <div class="spectrum-grid-col-xs-12">
+    <p class="spectrum-Body homepage--browse-filters-description">浏览支持库中某些最热门语言的字体</p>
+    <a href="/fonts"
+       class="spectrum-Button spectrum-Button--primary homepage--browse-all-button browse-by-language__browse-all-link">
+      <span class="spectrum-Button-label">
+        浏览全部
+      </span>
+    </a>
+  </div>
+</div>
+
+        <div class="spectrum-grid-row">
+          <div class="spectrum-grid-col-sm-3 homepage--browse-filter-card-wrapper" ng-class="homeCtrl.getSmallScreenClass()" ng-repeat="language in homeCtrl.browseByLanguages" ng-cloak>
+            <af-browse-filter-card
+              title="{{language.title}}"
+              href="{{language.href}}"
+              ng-src="{{language.src}}">
+            </af-browse-filter-card>
+          </div>
+        </div>
+        <div class="spectrum-grid-row">
+          <div class="spectrum-grid-col-xs-12">
+            <div class="homepage--licensing-section">
+              <div class="homepage--licensing-section-text">
+                <h3 class="spectrum-Heading--subtitle1 homepage--licensing-section-heading">Adobe Fonts 简化了许可</h3>
+                <p class="spectrum-Body homepage--licensing-section-description">通过 Creative Cloud 订阅，可立即访问 20000 多款字体，所有这些字体均已许可用于个人和商业用途，不另收费</p>
+              </div>
+              <div>
+                <img class="homepage--licensing-section-image" src="/assets/home/licensing_footer-698905038039530cbbc3fbb34d2147bed056f9f2de5dcdfe584972496ff8fc97.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </sp-theme>
+
+      <div class="section-notifications section-notifications--bottom"
+     ng-controller="NotificationController as notification"
+     ng-show="notification.hasMessages()"
+     ng-cloak>
+
+
+
+
+
+  <div ng-repeat="message in notification.getMessages() track by message.id" ng-cloak>
+    <div class="section-notifications--bottom-right">
+      <div class="spectrum-Toast feedback-toast" ng-if="message.type === 'feedback'">
+        <div class="spectrum-Toast-content"><span ng-bind-html="message.text"></span></div>
+        <div class="feedback-icons">
+          <feedback-icons category="message.category" selected-feedback="''"
+                          tooltip-text="message.tooltipText"
+                          user="''">
+          </feedback-icons>
+        </div>
+        <div class="spectrum-Toast-buttons">
+          <button ng-if="message.actionLink"
+                  ng-click="notification.handleActionClick(message.actionLink)"
+                  class="spectrum-Button spectrum-Button--overBackground spectrum-Button--quiet">
+            <span class="spectrum-Button-label">{{message.actionLabel}}</span>
+          </button>
+          <button ng-click="notification.handleFeedbackClose(message)"
+                  class="spectrum-ClearButton spectrum-ClearButton--medium spectrum-ClearButton--overBackground">
+            <svg class="spectrum-Icon spectrum-UIIcon-CrossMedium" focusable="false" aria-hidden="true">
+              <use xlink:href="#spectrum-css-icon-CrossMedium" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="spectrum-Toast spectrum-Toast--info" ng-if="message.type === 'info'">
+        <svg class="spectrum-Icon spectrum-UIIcon-SuccessMedium spectrum-Toast-typeIcon" focusable="false" aria-hidden="true">
+  <use xlink:href="#spectrum-css-icon-SuccessMedium"/>
+</svg>
+<div class="spectrum-Toast-content"><span ng-bind-html="message.text"></span></div>
+<div class="spectrum-Toast-buttons">
+  <button ng-if="message.actionLink" ng-click="notification.handleActionClick(message.actionLink)" class="spectrum-Button spectrum-Button--overBackground spectrum-Button--quiet">
+    <span class="spectrum-Button-label">{{message.actionLabel}}</span>
+  </button>
+  <button ng-click="notification.handleCloseClick(message)" class="spectrum-ClearButton spectrum-ClearButton--medium spectrum-ClearButton--overBackground">
+    <svg class="spectrum-Icon spectrum-UIIcon-CrossMedium" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-CrossMedium" />
+    </svg>
+  </button>
+</div>
+
+      </div>
+      <div class="spectrum-Toast spectrum-Toast--success" ng-if="message.type ==='success'">
+        <svg class="spectrum-Icon spectrum-UIIcon-SuccessMedium spectrum-Toast-typeIcon" focusable="false" aria-hidden="true">
+  <use xlink:href="#spectrum-css-icon-SuccessMedium"/>
+</svg>
+<div class="spectrum-Toast-content"><span ng-bind-html="message.text"></span></div>
+<div class="spectrum-Toast-buttons">
+  <button ng-if="message.actionLink" ng-click="notification.handleActionClick(message.actionLink)" class="spectrum-Button spectrum-Button--overBackground spectrum-Button--quiet">
+    <span class="spectrum-Button-label">{{message.actionLabel}}</span>
+  </button>
+  <button ng-click="notification.handleCloseClick(message)" class="spectrum-ClearButton spectrum-ClearButton--medium spectrum-ClearButton--overBackground">
+    <svg class="spectrum-Icon spectrum-UIIcon-CrossMedium" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-CrossMedium" />
+    </svg>
+  </button>
+</div>
+
+      </div>
+      <div class="spectrum-Toast spectrum-Toast--error adobe-fonts-error-message" ng-if="message.type ==='error'">
+        <svg class="spectrum-Icon spectrum-UIIcon-SuccessMedium spectrum-Toast-typeIcon" focusable="false" aria-hidden="true">
+  <use xlink:href="#spectrum-css-icon-SuccessMedium"/>
+</svg>
+<div class="spectrum-Toast-content"><span ng-bind-html="message.text"></span></div>
+<div class="spectrum-Toast-buttons">
+  <button ng-if="message.actionLink" ng-click="notification.handleActionClick(message.actionLink)" class="spectrum-Button spectrum-Button--overBackground spectrum-Button--quiet">
+    <span class="spectrum-Button-label">{{message.actionLabel}}</span>
+  </button>
+  <button ng-click="notification.handleCloseClick(message)" class="spectrum-ClearButton spectrum-ClearButton--medium spectrum-ClearButton--overBackground">
+    <svg class="spectrum-Icon spectrum-UIIcon-CrossMedium" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-CrossMedium" />
+    </svg>
+  </button>
+</div>
+
+      </div>
+      <div class="spectrum-Toast adobe-fonts-warning-message" ng-if="message.type === 'warn'">
+        <svg class="spectrum-Icon spectrum-UIIcon-SuccessMedium spectrum-Toast-typeIcon" focusable="false" aria-hidden="true">
+  <use xlink:href="#spectrum-css-icon-SuccessMedium"/>
+</svg>
+<div class="spectrum-Toast-content"><span ng-bind-html="message.text"></span></div>
+<div class="spectrum-Toast-buttons">
+  <button ng-if="message.actionLink" ng-click="notification.handleActionClick(message.actionLink)" class="spectrum-Button spectrum-Button--overBackground spectrum-Button--quiet">
+    <span class="spectrum-Button-label">{{message.actionLabel}}</span>
+  </button>
+  <button ng-click="notification.handleCloseClick(message)" class="spectrum-ClearButton spectrum-ClearButton--medium spectrum-ClearButton--overBackground">
+    <svg class="spectrum-Icon spectrum-UIIcon-CrossMedium" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-CrossMedium" />
+    </svg>
+  </button>
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    </main>
+
+    
+
+    <footer class="spectrum-grid--fluid spectrum--dark adobe-fonts-footer"
+        ng-controller="AdobeFontsFooterController as adobeFontsFooterCtrl"
+        ng-cloak>
+  <script id="/locale_info" type="text/ng-data">
+    {"allLocales":[{"label":"English","value":"en_US"},{"label":"Deutsch","value":"de_DE"},{"label":"Français","value":"fr_FR"},{"label":"日本語","value":"ja_JP"},{"label":"Español","value":"es_ES"},{"label":"Italiano","value":"it_IT"},{"label":"Português","value":"pt_BR"},{"label":"Русский","value":"ru_RU"},{"label":"한국어","value":"ko_KR"},{"label":"简体中文","value":"zh_CN"},{"label":"繁體中文","value":"zh_TW"}],"selectedLocale":"zh_CN"}
+  </script>
+
+  <div class="spectrum-grid-row adobe-fonts-footer__top">
+    <div class="spectrum-grid-col-xs-12 spectrum-grid-col-sm-4">
+      <a href="/">
+        <section class="adobe-fonts-footer__logo"></section>
+      </a>
+    </div>
+
+    <div class="spectrum-grid-col-xs-6 spectrum-grid-col-sm-2">
+      <h4 class="spectrum-Heading--subtitle3">
+        浏览
+      </h4>
+
+      <ul class="list--no-decoration adobe-fonts-footer__link_list">
+        <li>
+          <a class="spectrum-Link--subtle"
+             href="/fonts">
+            字体
+          </a>
+        </li>
+        <li>
+          <a class="spectrum-Link--subtle"
+             href="/collections">
+            字体包
+          </a>
+        </li>
+        <li>
+          <a class="spectrum-Link--subtle"
+             href="/foundries">
+            字体设计公司
+          </a>
+        </li>
+        <li>
+          <a class="spectrum-Link--subtle"
+             href="/designers">
+            设计师
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="spectrum-grid-col-xs-6 spectrum-grid-col-sm-2">
+      <h4 class="spectrum-Heading--subtitle3">
+        支持
+      </h4>
+      <ul class="list--no-decoration adobe-fonts-footer__link_list">
+        <li>
+          <a class="spectrum-Link--subtle"
+             href="/help">
+            帮助
+          </a>
+        </li>
+        <li>
+          <a class="spectrum-Link--subtle"
+             href="http://status.typekit.com">
+            状态博客
+          </a>
+        </li>
+        
+        <li>
+          <a class="spectrum-Link--subtle"
+             href="http://twitter.com/adobefonts">
+            Twitter
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="spectrum-grid-col-xs-6 spectrum-grid-col-sm-2">
+      <h4 class="spectrum-Heading--subtitle3">
+        关于
+      </h4>
+      <ul class="list--no-decoration adobe-fonts-footer__link_list">
+        <li>
+          <a class="spectrum-Link--subtle"
+             href="/about">
+            Adobe Fonts
+          </a>
+        </li>
+        <li>
+          <a class="spectrum-Link--subtle"
+             href="/typekit">
+            Typekit Web 字体
+          </a>
+        </li>
+        <li>
+          <a class="spectrum-Link--subtle" href="https://theblog.adobe.com/creativity/typography/">博客</a>
+        </li>
+              </ul>
+    </div>
+    <div class="spectrum-grid-col-xs-6 spectrum-grid-col-sm-2">
+      <h4 class="spectrum-Heading--subtitle3">
+        ADOBE
+      </h4>
+      <ul class="list--no-decoration adobe-fonts-footer__link_list">
+        <li>
+          <a class="spectrum-Link--subtle" target="_blank" href="https://www.adobe.com/cn/creativecloud/photography.html">摄影</a>
+        </li>
+        <li>
+          <a class="spectrum-Link--subtle" target="_blank" href="https://www.adobe.com/cn/creativecloud/design.html">设计</a>
+        </li>
+        <li>
+          <a class="spectrum-Link--subtle" target="_blank" href="https://www.adobe.com/cn/creativecloud/illustration.html">插图</a>
+        </li>
+        <li>
+          <a class="spectrum-Link--subtle" target="_blank" href="https://www.adobe.com/cn/creativecloud/video.html">视频</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="spectrum-grid-row">
+    <div class="spectrum-grid-col-xs">
+      <hr class="spectrum-Rule spectrum-Rule--small"/>
+    </div>
+  </div>
+
+  <div class="spectrum-grid-row">
+    <div class="spectrum-grid-col-xs-12 spectrum-grid-col-sm-9 adobe-fonts-footer__bottom-links">
+      <a class="spectrum-Body--small" href=http://www.adobe.com/cn/misc/terms.html>
+        使用条款
+      </a>
+      <a class="spectrum-Body--small" href=http://www.adobe.com/cn/privacy>
+        隐私政策
+      </a>
+      <a class="spectrum-Body--small" href=https://www.adobe.com/cn/privacy/cookies.html>
+        Cookie
+      </a>
+      <div class="adobe-fonts-footer__evidon-notice-link">
+        <div class="evidon-notice-link">
+</div>
+
+<script>
+  window.fedsConfig = window.fedsConfig || {};
+  window.fedsConfig.privacy = window.fedsConfig.privacy || {};
+  window.fedsConfig.privacy.footerLinkSelector = '.evidon-notice-link';
+  window.fedsConfig.privacy.otDomainId = '7a5eb705-95ed-4cc4-a11d-0cc5760e93db-test';
+  tk.AdobePrivacy.enableConsentCheck();
+</script>
+
+    <script>
+      window.fedsConfig.privacy.otDomainId = '7a5eb705-95ed-4cc4-a11d-0cc5760e93db';
+    </script>
+    <script src="https://www.adobe.com/etc/beagle/public/globalnav/adobe-privacy/latest/privacy.min.js"></script>
+
+      </div>
+
+      <div class="adobe-fonts-footer__locale_switcher">
+        <adobe-fonts-locale-switcher
+          locales="adobeFontsFooterCtrl.locales"
+          ng-change="adobeFontsFooterCtrl.handleLocaleSwitcherChange()"
+          ng-model="adobeFontsFooterCtrl.selectedLocale"
+        />
+      </div>
+    </div>
+
+    <div class="spectrum-grid-col-xs-12 spectrum-grid-col-sm-3 spectrum-grid-start-xs spectrum-grid-end-sm">
+      <span class="spectrum-Body--small">
+        &copy; 2022 Adobe. All rights reserved.
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+
+    _gaq.push(['_setAccount', 'UA-8850781-2']);
+    _gaq.push(['_trackPageview']);
+
+
+    tk.AdobePrivacy.afterConsent(function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    });
+</script>
+
+
+    <script id="/font_filters_sidebar/i18n" type="text/ng-data">{"shared.adobe_fonts_filters_sidebar.number_of_styles_all":"全部"}</script>
+
+    <script id="/fontpack_items/i18n" type="text/ng-data">{"neue.fontpacks.subscribe_to_activate_message":"订阅 Creative Cloud 以激活这些字体。","neue.fontpacks.sync_error_message":"尝试获取字体包时出错。某些字体无法被激活。请重试。","neue.fontpacks.unsync_error_message":"尝试停用字体包时出错。某些字体无法被停用。请重试。","neue.fontpacks.view_plans_action":"查看计划"}</script>
+
+    <script id="/neue/i18n" type="text/ng-data">{"frontend.browse_sample_text.characters_not_allowed":"想要查看许多 \u003cspan style=\"font-family: adobe-notdef;\"\u003exx\u003c/span\u003e？我们只在此浏览页面上显示字符的子集，\u003cbr/\u003e最好使用下拉菜单中的文本字符串进行浏览。\u003cbr/\u003e检查单个系列页面以查看完整字符集并设置自定文本。","kit_editor.kits.publish.update.project_eta_message":"已更新“%{web_project_name}”。更改在整个字体网络中生效可能需要几分钟。","neue.browse.family_card":{"fonts":"字体","font":"种字体","entitled_font_count":{"one":"1 种字体","other":"%{count} 种字体"},"fonts_with_cc":{"one":"1 种带 CC 的字体","other":"CC 附带的 %{count} 种字体"},"to_buy":{"one":"要购买的 1 种字体","other":"要购买的 %{count} 种字体"},"fonts_active_count":{"one":"停用 1 种字体","other":"停用 %{count} 种字体"},"fonts_activated_action":{"one":"您已激活 1 种字体","other":"您已激活 %{count} 种字体"},"fonts_deactivated_action":{"one":"您已停用 1 种字体","other":"您已停用 %{count} 种字体"},"fonts_named_activated_action":{"one":"您已激活 %{font}","other":"您已激活 %{count} 种字体"},"fonts_named_deactivated_action":{"one":"您已停用 %{font}","other":"您已停用 %{count} 种字体"},"subscribe_to_cc":"订阅 Creative Cloud 以激活这些字体。","view_plans_action":"查看计划","error_occurred_activating_some_fonts":"尝试激活所有字体时出错。某些字体无法被激活。请重试。","error_occurred_deactivating_some_fonts":"尝试停用所有字体时出错。某些字体仍可能被激活。请重试。","error_occurred_activating_fonts":"尝试激活字体时出错。请重试。","error_occurred_deactivating_fonts":"尝试停用所有字体时出错。请重试。","activate_fonts":"激活字体","available_to_buy":"可供购买","available_in_cc":"随 CC 提供"}}</script>
+
+    <script id="/angular_templates/directives/adobe_fonts_auto_complete.html" type="text/ng-template"><div class="adobe-fonts-auto-complete"
+     ng-class="{
+       'adobe-fonts-auto-complete--has-results': adobeFontsAutoCompleteCtrl.results.length > 0
+     }"
+     ng-keydown="adobeFontsAutoCompleteCtrl.handleElementKeyDown($event)">
+  <input autocomplete="off"
+         type="text"
+         name="query"
+         class="spectrum-Textfield spectrum-Search-input adobe-fonts-auto-complete__search-field"
+         placeholder="{{adobeFontsAutoCompleteCtrl.inputPlaceholder}}"
+         ng-model="adobeFontsAutoCompleteCtrl.searchTerm"
+         ng-keyup="adobeFontsAutoCompleteCtrl.handleInputKeyup($event)">
+  <div class="adobe-fonts-auto-complete__results"
+       ng-show="adobeFontsAutoCompleteCtrl.isResultListVisible">
+    <span class="adobe-fonts-auto-complete__title"
+          ng-show="adobeFontsAutoCompleteCtrl.resultTitle">{{adobeFontsAutoCompleteCtrl.resultTitle}}</span>
+    <input type="submit"
+           value="{{adobeFontsAutoCompleteCtrl.resultSeeAllLabel}}"
+           class="adobe-fonts-auto-complete__submit spectrum-Link"
+           ng-show="adobeFontsAutoCompleteCtrl.resultSeeAllLabel">
+    <ul class="{{adobeFontsAutoCompleteCtrl.resultDivClasses}}">
+      <li class="adobe-fonts-auto-complete__item"
+          ng-repeat="result in adobeFontsAutoCompleteCtrl.results track by $index">
+        <a href="{{adobeFontsAutoCompleteCtrl.getSearchResultItemLink(result)}}"
+           ng-focus="adobeFontsAutoCompleteCtrl.handleResultFocus($index)">
+          {{result.name}}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</script><script id="/angular_templates/directives/adobe_fonts_carousel.html" type="text/ng-template"><div class="adobe-fonts-carousel js_slider">
+  <button class="adobe-fonts-carousel__previous-button js_prev" ng-hide="carouselCtrl.hidePreviousAndNextButtons"></button>
+
+  <div class="adobe-fonts-carousel__frame js_frame">
+    <ng-transclude></ng-transclude>
+  </div>
+
+  <button class="adobe-fonts-carousel__next-button js_next" ng-hide="carouselCtrl.hidePreviousAndNextButtons"></button>
+</div>
+
+<div class="adobe-fonts-carousel__controls" ng-show="carouselCtrl.shouldShowDotControl()">
+  <div class="adobe-fonts-carousel__dot"
+       ng-repeat="i in carouselCtrl.dotNumbers()"
+       ng-class="{'adobe-fonts-carousel__dot-active': carouselCtrl.isDotActive(i)}"
+       ng-click="carouselCtrl.selectDot(i)"
+       ng-show="carouselCtrl.shouldShowDot(i)">
+  </div>
+</div>
+<a class="spectrum-Link adobe-fonts-carousel__link" ng-href="{{carouselCtrl.getLinkHref()}}" ng-if="carouselCtrl.links">
+  {{carouselCtrl.getLinkName()}}
+</a>
+</script><script id="/angular_templates/directives/adobe_fonts_family_image_card.html" type="text/ng-template"><div class="adobe-fonts-family-image-card">
+  <div ng-class="fontImageCardCtrl.familyImageContainerClass()" class="adobe-fonts-family-image-card--container">
+    <img ng-src="{{fontImageCardCtrl.imageItem}}" ng-class="fontImageCardCtrl.familyImageClass()"
+         alt="家庭卡图像">
+  </div>
+</div>
+</script><script id="/angular_templates/directives/adobe_fonts_family_image_card_list.html" type="text/ng-template"><div>
+  <div class="adobe-fonts-family-image-card-list spectrum-grid-row" ng-class="fontImageCardListController.cardListMargin()">
+    <ul class="slides js_slides spectrum-grid-col-xs-12" ng-class="fontImageCardListController.familyImageContainerClass()">
+      <li ng-repeat="image in fontImageCardListController.imageItems track by $index"
+          ng-class="fontImageCardListController.layoutClass()">
+        <adobe-fonts-family-image-card image-item="image" item-size={{fontImageCardListController.imageItems.length}}
+                                       display-view={{fontImageCardListController.displayView}}></adobe-fonts-family-image-card>
+      </li>
+    </ul>
+  </div>
+</div>
+</script><script id="/angular_templates/directives/spectrum/adobe_fonts_filters_sidebar.html" type="text/ng-template"><div class="adobe-fonts-filters-sidebar adobe-fonts-filters-sidebar--expanded spectrum-Accordion" data-id="sidebar-filter-toggles">
+  <div class="adobe-fonts-filters-sidebar__section adobe-fonts-filters-sidebar__clear-filters_section">
+    <button class="spectrum-Button spectrum-Button--primary"
+            ng-disabled="!filtersSidebarCtrl.isClearFiltersEnabled()"
+            ng-click="filtersSidebarCtrl.clearFilters()">
+      <span class="spectrum-Button-label">
+        清除筛选器
+      </span>
+    </button>
+  </div>
+
+  <!-- Languages and writing systems menu -->
+  <div class="adobe-fonts-filters-sidebar__section spectrum-Accordion-item"
+      ng-class="{ 'is-open': filtersSidebarCtrl.isSectionOpen('languages') }">
+    <h2 class="spectrum-Accordion-itemHeader spectrum-Heading--subtitle1 adobe-fonts-filters-sidebar__section-header adobe-fonts-filters-sidebar__languages-and-writing-systems-menu-header"
+        ng-click="filtersSidebarCtrl.handleSectionToggleClick('languages')" data-id="language-filter">
+      <span>语言和 </span><span>书写体系</span>
+      <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightMedium spectrum-Accordion-itemIndicator adobe-fonts-filters-sidebar__section-arrow"
+          focusable="false"
+          aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-ChevronRightMedium" />
+      </svg>
+    </h2>
+
+    <div class="spectrum-Accordion-itemContent adobe-fonts-filters-sidebar__section-content">
+      <spectrum-dropdown
+        class="adobe-fonts-filters-sidebar__languages-and-writing-systems-menu"
+        prioritize="filtersSidebarCtrl.prioritizedLanguage"
+        menu-items="filtersSidebarCtrl.getLanguages()"
+        selected-value="filtersSidebarCtrl.selectedLanguage"
+        on-selected-item-change="filtersSidebarCtrl.handleSelectedLanguageModeChange()"
+        trigger-button-data-id="languages-and-writing-systems-button">
+        选择一个选项...
+      </spectrum-dropdown>
+    </div>
+  </div>
+
+  <!-- Library filters -->
+  <div class="adobe-fonts-filters-sidebar__section spectrum-Accordion-item"
+       ng-class="{ 'is-open': filtersSidebarCtrl.isSectionOpen('library') }"
+       ng-show="filtersSidebarCtrl.isLibrarySectionVisible()">
+    <h2 class="spectrum-Accordion-itemHeader spectrum-Heading--subtitle1 adobe-fonts-filters-sidebar__section-header"
+        ng-click="filtersSidebarCtrl.handleSectionToggleClick('library')" data-id="library-filter">
+      库
+
+      <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightMedium spectrum-Accordion-itemIndicator adobe-fonts-filters-sidebar__section-arrow"
+           focusable="false"
+           aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-ChevronRightMedium" />
+      </svg>
+    </h2>
+
+    <!-- Paid fonts filter -->
+    <div class="spectrum-Accordion-itemContent adobe-fonts-filters-sidebar__section-content">
+      <label class="spectrum-Checkbox">
+        <input type="checkbox"
+               class="spectrum-Checkbox-input"
+               ng-checked="filtersSidebarCtrl.isShowPaidFontsSelected()"
+               ng-click="filtersSidebarCtrl.handleShowPaidFontsChange()">
+
+        <span class="spectrum-Checkbox-box">
+          <svg class="spectrum-Icon spectrum-UIIcon-CheckmarkSmall spectrum-Checkbox-checkmark"
+               focusable="false"
+               aria-hidden="true">
+            <use xlink:href="#spectrum-css-icon-CheckmarkSmall" />
+          </svg>
+        </span>
+
+        <span class="adobe-fonts-filters-sidebar__section-checkbox-label">
+          显示 Creative Cloud 随附的字体。
+        </span>
+      </label>
+    </div>
+  </div>
+
+  <!-- Tags filters -->
+  <div class="adobe-fonts-filters-sidebar__section spectrum-Accordion-item"
+       ng-class="{ 'is-open': filtersSidebarCtrl.isSectionOpen('tags') }"
+       ng-show="filtersSidebarCtrl.isTagsSectionVisible()">
+    <h2 class="spectrum-Accordion-itemHeader spectrum-Heading--subtitle1 adobe-fonts-filters-sidebar__section-header"
+        ng-click="filtersSidebarCtrl.handleSectionToggleClick('tags')">
+      标记
+      <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightMedium spectrum-Accordion-itemIndicator adobe-fonts-filters-sidebar__section-arrow"
+           focusable="false"
+           aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-ChevronRightMedium" />
+      </svg>
+    </h2>
+
+    <div class="spectrum-Accordion-itemContent adobe-fonts-filters-sidebar__section-content
+                adobe-fonts-filters-sidebar__tags-filters-container">
+      <ul class="list--inline adobe-fonts-filters-sidebar__tags-filters-section spectrum-Tags">
+        <li ng-repeat="tag in filtersSidebarCtrl.getTags() | limitTo:filtersSidebarCtrl.getDisplayTagsCount()"
+            ng-class="{ selected: filtersSidebarCtrl.isTagSelected(tag.key) }">
+          <button class="adobe-fonts-filters-sidebar__tags-filter-button spectrum-Tags-item adobe-fonts-filters-sidebar__tags-filter-button-display-variation"
+                  data-id="tag-{{tag.key}}"
+                  ng-if="!filtersSidebarCtrl.shouldShowDisplayFont(tag)"
+                  ng-click="filtersSidebarCtrl.handleTagClick(tag.key)">
+            <span class="spectrum-Tags-item-label">
+              {{ tag.label }}
+            </span>
+          </button>
+          <button class="adobe-fonts-filters-sidebar__tags-filter-button spectrum-Tags-item adobe-fonts-filters-sidebar__tags-filter-button-display-variation"
+                  data-id="tag-{{tag.key}}"
+                  display-in-font="filtersSidebarCtrl.getFontDisplayData(tag)"
+                  ng-if="filtersSidebarCtrl.shouldShowDisplayFont(tag)"
+                  ng-click="filtersSidebarCtrl.handleTagClick(tag.key)">
+            <span class="spectrum-Tags-item-label">
+              {{ tag.label }}
+            </span>
+          </button>
+        </li>
+      </ul>
+      <span class="adobe-fonts-filters-sidebar__tags-filter-expand-button"
+            ng-if="filtersSidebarCtrl.shouldDisplayShowMore()"
+            ng-click="filtersSidebarCtrl.toggleShowMore()">
+        查看另外 {{filtersSidebarCtrl.getDisplayMoreCount()}} 个
+      </span>
+      <span class="adobe-fonts-filters-sidebar__tags-filter-expand-button"
+            ng-if="filtersSidebarCtrl.shouldDisplayShowLess()"
+            ng-click="filtersSidebarCtrl.toggleShowMore()">
+            显示更少
+      </span>
+    </div>
+  </div>
+
+  <!-- Filters based on data from the backend -->
+  <div class="adobe-fonts-filters-sidebar__section spectrum-Accordion-item"
+       ng-repeat="filterSection in filtersSidebarCtrl.getCurrentFilters()"
+       ng-class="{ 'is-open': filtersSidebarCtrl.isSectionOpen(filterSection.name) }">
+    <h2 class="spectrum-Accordion-itemHeader spectrum-Heading--subtitle1 adobe-fonts-filters-sidebar__section-header"
+        ng-click="filtersSidebarCtrl.handleSectionToggleClick(filterSection.name)">
+      {{ filterSection.label }}
+
+      <svg class="spectrum-Icon spectrum-UIIcon-ChevronRightMedium spectrum-Accordion-itemIndicator adobe-fonts-filters-sidebar__section-arrow"
+           focusable="false"
+           aria-hidden="true">
+        <use xlink:href="#spectrum-css-icon-ChevronRightMedium" />
+      </svg>
+    </h2>
+
+    <div class="spectrum-Accordion-itemContent adobe-fonts-filters-sidebar__section-content">
+      <div class="adobe-fonts-filters-sidebar__styles-slider-section" data-id="number-of-styles-slider"
+           ng-if="filtersSidebarCtrl.shouldDisplayStylesSlider(filterSection)">
+        <spectrum-slider
+          allow-overlap="true"
+          end-value="filtersSidebarCtrl.getMaxStyles()"
+          label="系列中的字体数"
+          max="26"
+          min="1"
+          on-change="filtersSidebarCtrl.handleStylesSliderChange($data)"
+          start-value="filtersSidebarCtrl.getMinStyles()"
+          step="1"
+          value-label="filtersSidebarCtrl.getStylesSliderLabel($data)"
+          variant="range"></spectrum-slider>
+      </div>
+
+      <ul class="list--inline adobe-fonts-filters-sidebar__language-mode-filters"
+          ng-if="!filtersSidebarCtrl.isGrouped(filterSection)">
+        <li class="adobe-fonts-filters-sidebar__language-mode-filter-item"
+            ng-repeat="filter in filterSection.values"
+            ng-class="{ selected: filtersSidebarCtrl.isFilterSelected(filter.key) }">
+          <button ng-attr-id="{{ filter.slug }}"
+                  class="adobe-fonts-filters-sidebar__filter-button"
+                  ng-click="filtersSidebarCtrl.handleFilterClick(filter.key)">
+            <svg class="adobe-fonts-filters-sidebar__icon--medium">
+              <use ng-attr-xlink:href="{{ filtersSidebarCtrl.getIconUrlForFilter(filter) }}"
+                   xlink:href=""
+                   class="adobe-fonts-filters-sidebar__icon"></use>
+            </svg>
+          </button>
+          <label for="{{ filter.slug }}">{{ filter.label }}</label>
+        </li>
+      </ul>
+
+      <ul class="list--no-decoration adobe-fonts-filters-sidebar__filter-groups"
+          ng-if="filtersSidebarCtrl.isGrouped(filterSection)">
+        <li class="adobe-fonts-filters-sidebar__filter-group adobe-fonts-filters-sidebar__filter-group--{{filter.key}}"
+            ng-repeat="filter in filterSection.filters">
+          <ul class="list--no-decoration">
+            <li class="adobe-fonts-filters-sidebar__filter-option"
+                ng-class="{ selected: filtersSidebarCtrl.isFilterSelected(value.key) }"
+                ng-repeat="value in filter.values">
+              <button ng-attr-id="{{ value.slug }}"
+                      ng-click="filtersSidebarCtrl.handleFilterClick(value.key)">
+                <svg class="adobe-fonts-filters-sidebar__icon--medium">
+                  <use ng-attr-xlink:href="{{ filtersSidebarCtrl.getIconUrlForFilter(value) }}" xlink:href=""></use>
+                </svg>
+              </button>
+            </li>
+          </ul>
+
+          <label class="spectrum-Radio-label">
+            {{ filter.label }}
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</script><script id="/angular_templates/directives/family_card.html" type="text/ng-template"><li class="adobe-fonts-family-card" data-id="family-card" data-family-slug="{{familyCard.family.slug}}">
+  <div ng-class="familyCard.getCardContainerClass()">
+  <a ng-href="/fonts/{{familyCard.family.slug}}"
+     class="adobe-fonts-family-card--link"
+     ng-click="familyCard.handleFamilyCardClick()"
+     tabindex="0">
+  </a>
+  <div class="spectrum-grid-row">
+    <div class="spectrum-grid-col-xs-12 spectrum-grid-start-xs">
+      <feedback-icons ng-if="familyCard.recommendationIndex() || familyCard.recommendationIndex() === 0"
+                      category="'recommendation'"
+                      family-slug="familyCard.family.slug"
+                      subcategory="familyCard.family.category"
+                      selected-feedback="familyCard.selectedFeedback"
+                      tooltip-text="'Does this family belong in this recommendation?'"
+                      user="''">
+      </feedback-icons>
+      <div ng-if="familyCard.isCarouselVisible()" class="adobe-fonts-family-image-carousel">
+        <adobe-fonts-carousel class="adobe-fonts-carousel-container adobe-fonts-family-card__carousel-padding"
+                              layout="{{familyCard.viewType()}}"
+                              item-size={{familyCard.getSlideLengthForGrid()}}
+                              is-family-image-carousel="true">
+          <div class="adobe-fonts-family-image-card-list">
+            <ul class="slides js_slides spectrum-grid--fluid">
+              <li ng-repeat="slide in familyCard.getSlidesForGrid() track by $index" class="adobe-fonts-family-image-card-view">
+                <a href="/fonts/{{familyCard.family.slug}}"
+                   ng-click="familyCard.handleFamilyCardClick()"
+                   tabindex="0">
+                  <div ng-if="!familyCard.isTextSlide(slide)">
+                    <adobe-fonts-family-image-card image-item="slide" item-size={{familyCard.getSlideLengthForGrid()}}
+                                                   display-view="grid"></adobe-fonts-family-image-card>
+                  </div>
+                  <div ng-if="familyCard.isTextSlide(slide)">
+                    <div ng-class="familyCard.getTextDirectionClass()" class="adobe-fonts-family-card__sampletext-with-carousel-grid adobe-fonts-family-card__sampletext-with-carousel">
+  <p class="spectrum-Heading--display"
+      ng-style="familyCard.getExampleTextStyle()"
+      display-in-font="familyCard.getDisplayFont()">
+    {{familyCard.getExampleText()}}
+  </p>
+</div>
+
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </adobe-fonts-carousel>
+      </div>
+      <div ng-if="!familyCard.isCarouselVisible()">
+        <div ng-class="familyCard.getTextDirectionClass()" class="adobe-fonts-family-card__sampletext-with-carousel">
+  <p class="spectrum-Heading--display"
+      ng-style="familyCard.getExampleTextStyle()"
+      display-in-font="familyCard.getDisplayFont()">
+    {{familyCard.getExampleText()}}
+  </p>
+</div>
+
+      </div>
+    </div>
+  </div>
+  <div class="spectrum-grid-row">
+    <div class="spectrum-grid-col-xs-12 spectrum-grid-start-xs" ng-class="familyCard.getCardInfoClass()">
+      <div class="adobe-fonts-family-card__info">
+        <span class="adobe-fonts-family-card__family_name">{{familyCard.family.name}}</span>
+
+<div ng-if="familyCard.hasUnsyncedFontpacks()" class="adobe-fonts-family-card__fontpack_info">
+  <div class="adobe-fonts-family-card__fontpack_container"
+       ng-repeat="fontpack in familyCard.family.unsynced_fontpacks">
+    <a class="adobe-fonts-family-card__fontpack_name"
+       ng-href="/collections/{{fontpack.slug}}">
+      {{fontpack.name}}
+    </a>
+    <span class="adobe-fonts-family-card__bullet">•</span>
+  </div>
+  <a class="adobe-fonts-family-card__view_family"
+     ng-href="/fonts/{{familyCard.family.slug}}">
+    查看系列
+  </a>
+</div>
+
+<div ng-if="!familyCard.hasUnsyncedFontpacks()" class="adobe-fonts-family-card__foundry_info">
+  <span class="adobe-fonts-family-card__foundry_name">
+    {{familyCard.family.foundry.name}}
+  </span>
+  <span class="adobe-fonts-family-card__count_messages" ng-if="familyCard.getCountMessages().length > 0">
+    <span>{{familyCard.getCountMessages()}}</span>
+  </span>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="spectrum-grid-row adobe-fonts-family-card__info-bottom">
+    <div class="adobe-fonts-family-card__icons--container">
+      <div class="adobe-fonts-family-card__icons">
+        
+        
+      </div>
+    </div>
+
+    <div class="adobe-fonts-family-card__toggle-switch--container">
+      <div class="spectrum-ToggleSwitch spectrum-ToggleSwitch--all toggle-switch-activate-family adobe-fonts-family-card__toggle-switch"
+      ng-click="familyCard.toggleFamilySync($event)"
+      ng-if="familyCard.isToggleOn() || familyCard.isPreviouslyActiveView()">
+  <label class="spectrum-ToggleSwitch-label" for="toggle-switch-activate-family">
+    {{familyCard.toggleMessage()}}
+  </label>
+
+  <input type="checkbox"
+          class="spectrum-ToggleSwitch-input"
+          id="toggle-switch-activate-family"
+          ng-if="!familyCard.showToggle()">
+
+  <input
+    type="checkbox"
+    class="spectrum-ToggleSwitch-input"
+    id="toggle-switch-activate-family"
+    ng-if="familyCard.showToggle()"
+    ng-checked="familyCard.isToggleOn()">
+
+  <span class="spectrum-ToggleSwitch-switch" ng-if="familyCard.showToggle()"></span>
+</div>
+
+<a href="/fonts/{{familyCard.family.slug}}"
+   class="spectrum-Button spectrum-Button--primary adobe-fonts-family-card__view-family-button"
+   ng-if="!familyCard.isToggleOn() && !familyCard.isPreviouslyActiveView()">
+  <span class="spectrum-Button-label">
+    查看系列
+  </span>
+</a>
+
+    </div>
+  </div>
+</div>
+
+  <div class="adobe-fonts-family-card--wide-view spectrum-grid--fluid">
+  <div class="spectrum-grid-row">
+    <div class="adobe-fonts-family-card__info">
+      <a href="/fonts/{{familyCard.family.slug}}"
+         ng-click="familyCard.handleFamilyCardClick()">
+        <span class="adobe-fonts-family-card__family_name">{{familyCard.family.name}}</span>
+
+<div ng-if="familyCard.hasUnsyncedFontpacks()" class="adobe-fonts-family-card__fontpack_info">
+  <div class="adobe-fonts-family-card__fontpack_container"
+       ng-repeat="fontpack in familyCard.family.unsynced_fontpacks">
+    <a class="adobe-fonts-family-card__fontpack_name"
+       ng-href="/collections/{{fontpack.slug}}">
+      {{fontpack.name}}
+    </a>
+    <span class="adobe-fonts-family-card__bullet">•</span>
+  </div>
+  <a class="adobe-fonts-family-card__view_family"
+     ng-href="/fonts/{{familyCard.family.slug}}">
+    查看系列
+  </a>
+</div>
+
+<div ng-if="!familyCard.hasUnsyncedFontpacks()" class="adobe-fonts-family-card__foundry_info">
+  <span class="adobe-fonts-family-card__foundry_name">
+    {{familyCard.family.foundry.name}}
+  </span>
+  <span class="adobe-fonts-family-card__count_messages" ng-if="familyCard.getCountMessages().length > 0">
+    <span>{{familyCard.getCountMessages()}}</span>
+  </span>
+</div>
+
+      </a>
+
+      <div class="adobe-fonts-family-card__icons">
+        </span>
+        </span>
+      </div>
+    </div>
+
+    <div class="adobe-fonts-family-card__toggle-switch-section">
+      <div class="spectrum-ToggleSwitch spectrum-ToggleSwitch--all toggle-switch-activate-family adobe-fonts-family-card__toggle-switch"
+      ng-click="familyCard.toggleFamilySync($event)"
+      ng-if="familyCard.isToggleOn() || familyCard.isPreviouslyActiveView()">
+  <label class="spectrum-ToggleSwitch-label" for="toggle-switch-activate-family">
+    {{familyCard.toggleMessage()}}
+  </label>
+
+  <input type="checkbox"
+          class="spectrum-ToggleSwitch-input"
+          id="toggle-switch-activate-family"
+          ng-if="!familyCard.showToggle()">
+
+  <input
+    type="checkbox"
+    class="spectrum-ToggleSwitch-input"
+    id="toggle-switch-activate-family"
+    ng-if="familyCard.showToggle()"
+    ng-checked="familyCard.isToggleOn()">
+
+  <span class="spectrum-ToggleSwitch-switch" ng-if="familyCard.showToggle()"></span>
+</div>
+
+<a href="/fonts/{{familyCard.family.slug}}"
+   class="spectrum-Button spectrum-Button--primary adobe-fonts-family-card__view-family-button"
+   ng-if="!familyCard.isToggleOn() && !familyCard.isPreviouslyActiveView()">
+  <span class="spectrum-Button-label">
+    查看系列
+  </span>
+</a>
+
+    </div>
+  </div>
+
+  <div class="spectrum-grid-row">
+    <div class="adobe-fonts-family-card__sampletext"
+         ng-class="{ 'adobe-fonts-family-card__no-background': familyCard.noBackground() }">
+      <a href="/fonts/{{familyCard.family.slug}}"
+         ng-click="familyCard.handleFamilyCardClick()">
+        <span class="spectrum-Heading--display" ng-style="familyCard.getExampleTextStyle()"
+              display-in-font="familyCard.getDisplayFont()">
+          {{familyCard.getExampleText()}}
+        </span>
+      </a>
+    </div>
+  </div>
+  <div class="spectrum-grid-row">
+    <div class="spectrum-grid-col-md-12">
+      <div class="adobe-fonts-family-card__specimen-images adobe-fonts-family-image-carousel" ng-if="familyCard.isCarouselVisible()">
+        <adobe-fonts-carousel class="adobe-fonts-carousel-container adobe-fonts-family-card__carousel-padding"
+                              layout="{{familyCard.viewType()}}"
+                              item-size={{familyCard.family.specimen_images.length}}
+                              is-family-image-carousel="true">
+          <a href="/fonts/{{familyCard.family.slug}}"
+             ng-click="familyCard.handleFamilyCardClick()">
+            <adobe-fonts-family-image-card-list image-items="familyCard.family.specimen_images"
+                                                display-view="list" ng-class="familyCard.getCarouselListClass()">
+            </adobe-fonts-family-image-card-list>
+          </a>
+        </adobe-fonts-carousel>
+      </div>
+    </div>
+  </div>
+</div>
+
+</li>
+</script><script id="/angular_templates/directives/feedback_icons.html" type="text/ng-template"><span ng-class="['feedback-icons-root', feedbackIcons.isSimilarityAndPairingVariant() ? 'similarity-and-pairing' : '']">
+
+  <span ng-class="feedbackIcons.getClass('positive', 'thumb-up-icon')"
+        ng-click="feedbackIcons.handleClick($event, 'positive')"
+        ng-if="feedbackIcons.areThumbsUpDownVisible()">
+    <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 18 18" width="18">
+  <defs>
+    <style>
+      .a {
+      fill: #6E6E6E;
+      }
+    </style>
+  </defs>
+  <rect id="Canvas" fill="#ff13dc" opacity="0" width="18" height="18"></rect><path class="a" d="M14.922,6.004l-3.275.005a10.73706,10.73706,0,0,0,.4-3.04A1.90165,1.90165,0,0,0,10.4605,1,1.6635,1.6635,0,0,0,8.82,2.582C8.5845,4.8595,6.1935,6.7135,4.936,7.2685A.495.495,0,0,0,4.5,7h-3a.5.5,0,0,0-.5.5v8a.5.5,0,0,0,.5.5h3a.5.5,0,0,0,.5-.5V15h7.222a2.318,2.318,0,0,0,2.063-1.2115L16.277,8.15a1.5,1.5,0,0,0-1.355-2.146Zm.4525,1.712L13.366,13.394a.921.921,0,0,1-.871.616L5,14V8.3c1.4335-.5765,4.575-2.7625,4.82-5.7a.687.687,0,0,1,.6405-.6c.305,0,.5605.371.5865.969A7.52457,7.52457,0,0,1,10.174,7h4.75a.5.5,0,0,1,.4505.716Z"></path>
+</svg>
+
+  </span>
+  <span ng-class="feedbackIcons.getClass('negative', 'thumb-down-icon')"
+        ng-click="feedbackIcons.handleClick($event, 'negative')"
+        ng-if="feedbackIcons.areThumbsUpDownVisible()">
+    <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 18 18" width="18">
+  <defs>
+    <style>
+      .a {
+      fill: #6E6E6E;
+      }
+    </style>
+  </defs>
+  <rect id="Canvas" fill="#ff13dc" opacity="0" width="18" height="18"></rect><path class="a" d="M16.277,9.85,14.285,4.212A2.318,2.318,0,0,0,12.222,3H5a.5.5,0,0,0-.5-.5h-3A.5.5,0,0,0,1,3v8a.5.5,0,0,0,.5.5h3A.5.5,0,0,0,5,11v-.238c1.2725.587,3.5885,2.415,3.82,4.656A1.6635,1.6635,0,0,0,10.4605,17a1.9023,1.9023,0,0,0,1.5865-1.9685,10.73831,10.73831,0,0,0-.4-3.0405l3.275.005A1.5,1.5,0,0,0,16.277,9.85ZM14.9235,11h-4.75a7.52559,7.52559,0,0,1,.873,4.0315c-.026.6-.2815.966-.5865.9685a.687.687,0,0,1-.6405-.6c-.245-2.9365-3.3865-5.1225-4.82-5.7V4l7.4955-.01a.921.921,0,0,1,.871.616l2.0085,5.678a.5.5,0,0,1-.451.716Z"></path>
+</svg>
+
+  </span>
+
+  <span ng-class="feedbackIcons.getClass(feedbackIcons.initSelectedFeedback(), 'flag-result-icon')"
+        ng-click="feedbackIcons.handleClick($event, feedbackIcons.toggleSelectedFeedback())"
+        ng-if="feedbackIcons.isCancelButtonVisible()">
+    <svg xmlns="http://www.w3.org/2000/svg" height="18" viewBox="0 0 18 18" width="18">
+  <defs>
+    <style>
+      .a {
+      fill: #6E6E6E;
+      }
+    </style>
+  </defs>
+  <rect id="Canvas" fill="#ff13dc" opacity="0" width="18" height="18"></rect><path class="a" d="M9,1a8,8,0,1,0,8,8A8,8,0,0,0,9,1Zm6,8a5.97146,5.97146,0,0,1-1.1095,3.4765l-8.367-8.367A6,6,0,0,1,15,9ZM3,9A5.97248,5.97248,0,0,1,4.1095,5.5235l8.367,8.3675A6,6,0,0,1,3,9Z"></path>
+</svg>
+
+  </span>
+
+  <span ng-class="['spectrum-Tooltip feedback-icons-tooltip', feedbackIcons.getTooltipClass()]"
+        ng-if="feedbackIcons.familySlug() || feedbackIcons.isCancelButtonVisible()">
+    <span class="spectrum-Tooltip-label">
+      {{feedbackIcons.tooltipText()}}
+    </span>
+    <span class="spectrum-Tooltip-tip"></span>
+  </span>
+</span>
+</script><script id="/angular_templates/directives/tk_paginate.html" type="text/ng-template"><div class="spectrum-grid-row spectrum-grid-center-xs" ng-if="tkPaginate.totalPages > 1">
+  <div class="adobe-fonts-filtered-family-list__pagination">
+    <nav class="spectrum-Pagination spectrum-Pagination--listing spectrum-grid-center-xs">
+      <a class="spectrum-Button spectrum-Button--primary spectrum-Button--quiet spectrum-Pagination-prevButton tk-paginate-prev-button"
+          ng-click="tkPaginate.previousPage()"
+          ng-if="!tkPaginate.isSelected(1)"> 上一个 </a>
+      <span ng-if="tkPaginate.isSelected(1)" class="tk-paginate-disabled"> 上一个 </span>
+      <a class="spectrum-ActionButton spectrum-ActionButton--quiet tk-paginate-action-button"
+          ng-class="{'is-selected' : tkPaginate.isSelected(1)}"
+          ng-click="tkPaginate.selectPage(1)">1</a>
+      <a class="spectrum-ActionButton spectrum-ActionButton--quiet tk-paginate-action-button" ng-if="tkPaginate.showBeginEllipsis()">...</a>
+      <a class="spectrum-ActionButton spectrum-ActionButton--quiet tk-paginate-action-button"
+          ng-repeat="page in tkPaginate.getPagesInRange()"
+          ng-class="{'is-selected' : tkPaginate.isSelected(page)}"
+          ng-click="tkPaginate.selectPage(page)">{{page}}</a>
+      <a class="spectrum-ActionButton spectrum-ActionButton--quiet tk-paginate-action-button" ng-if="tkPaginate.showEndEllipsis()">...</a>
+      <a class="spectrum-ActionButton spectrum-ActionButton--quiet tk-paginate-action-button"
+          ng-if="tkPaginate.totalPages > 1"
+          ng-class="{'is-selected' : tkPaginate.isSelected(tkPaginate.totalPages)}"
+          ng-click="tkPaginate.selectPage(tkPaginate.totalPages)">{{tkPaginate.totalPages}}</a>
+      <a class="spectrum-Button spectrum-Button--primary spectrum-Button--quiet spectrum-Pagination-nextButton tk-paginate-next-button"
+          ng-click="tkPaginate.nextPage()"
+          ng-if="!tkPaginate.isSelected(tkPaginate.totalPages)"> 下一个 </a>
+      <span ng-if="tkPaginate.isSelected(tkPaginate.totalPages)" class="tk-paginate-disabled"> 下一个 </span>
+    </nav>
+  </div>
+</div>
+</script><script id="/angular_templates/directives/spectrum/dropdown.html" type="text/ng-template"><div class="spectrum-Dropdown"
+     ng-model="spectrumDropdown.selectedValue"
+     ng-change="spectrumDropdown.handleChange()"
+     dropdown-base>
+  <button class="spectrum-FieldButton spectrum-Dropdown-trigger"
+          aria-haspopup="true"
+          dropdown-base-button
+          data-id="{{ spectrumDropdown.triggerButtonDataId }}">
+    <span class="spectrum-Dropdown-label">
+      {{ spectrumDropdown.getLabel() }}
+    </span>
+
+    <svg class="spectrum-Icon spectrum-UIIcon-ChevronDownMedium spectrum-Dropdown-icon" focusable="false" aria-hidden="true">
+      <use xlink:href="#spectrum-css-icon-ChevronDownMedium"></use>
+    </svg>
+  </button>
+
+  <div class="spectrum-Popover spectrum-Popover--bottom" dropdown-base-content>
+    <ul class="spectrum-Menu" role="listbox">
+      <li ng-if="spectrumDropdown.prioritizedItem" class="spectrum-Menu-item"
+          role="option"
+          tabindex="0"
+          dropdown-base-item
+          value="spectrumDropdown.prioritizedItem.value">
+        <span class="spectrum-Menu-itemLabel">
+          {{ spectrumDropdown.prioritizedItem.label }}
+        </span>
+      </li>
+      <li ng-if="spectrumDropdown.prioritizedItem" class="spectrum-Menu-divider" role="separator"></li>
+      <li class="spectrum-Menu-item"
+          role="option"
+          tabindex="0"
+          ng-repeat="item in spectrumDropdown.menuItems()"
+          dropdown-base-item
+          value="item.value">
+        <span class="spectrum-Menu-itemLabel">
+          {{ item.label }}
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
+</script>
+
+    <script src="https://use.typekit.net/uhb4nat.js"></script>
+<script>
+  (function () {
+    Typekit.load();
+
+    var loader = new tk.FontLoader();
+    var fonts = null || [];
+    var group = [];
+    fonts.forEach(function (font) {
+      loader.loadFont(font.css_name, font.opaque_id, font.fvd, font.unicode_range, font.feature_settings, font.dynamic);
+      if (tk.GlobalFontEvents && typeof tk.GlobalFontEvents.isFontLoaded == 'function') {
+        group.push(tk.GlobalFontEvents.isFontLoaded(font.css_name, font.fvd));
+      }
+    });
+
+    // TODO: This is only used for the Twitter cards. Once
+    // the twitter cards are rewritten, we can remove this.
+    // Only call this if Knockout is present.
+    if (typeof(ko) !== "undefined") {
+      ko.computed(function () {
+        return group.every(function (isLoaded) {
+          return isLoaded() === true;
+        });
+      }).subscribe(function (loaded) {
+        if (loaded && tk.GlobalFontEvents.active) {
+          tk.GlobalFontEvents.active();
+        }
+      });
+    }
+  }());
+</script>
+
+
+    <script id="/neue/release_flag_bit_indices" type="text/ng-data">
+      {}
+    </script>
+
+      <script id="omniture_config" type="text/ng-data">
+    {"environment":"production"}
+  </script>
+
+    <div class="adobe-fonts__svg-sprites">
+  <svg xmlns="http://www.w3.org/2000/svg"><symbol id="spectrum-css-icon-AlertMedium" viewBox="0 0 18 18"><path d="M8.564 1.289L.2 16.256A.5.5 0 0 0 .636 17h16.728a.5.5 0 0 0 .5-.5.494.494 0 0 0-.064-.244L9.436 1.289a.5.5 0 0 0-.872 0zM10 14.75a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25v-1.5a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25zm0-3a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25v-6a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25z"></path></symbol><symbol id="spectrum-css-icon-CheckmarkMedium" viewBox="0 0 12 12"><path d="M4.5 10a1.023 1.023 0 0 1-.8-.384l-2.488-3a1 1 0 0 1 1.577-1.233L4.5 7.376l4.712-5.991a1 1 0 1 1 1.576 1.23l-5.511 7A.977.977 0 0 1 4.5 10z"></path></symbol><symbol id="spectrum-css-icon-CheckmarkSmall" viewBox="0 0 10 10"><path d="M3.788 9A1 1 0 0 1 3 8.615l-2.288-3a1 1 0 1 1 1.576-1.23l1.5 1.991 3.924-4.991a1 1 0 1 1 1.576 1.23l-4.712 6A1 1 0 0 1 3.788 9z"></path></symbol><symbol id="spectrum-css-icon-ChevronDownMedium" viewBox="0 0 10 6"><path d="M9.99 1.01A1 1 0 0 0 8.283.3L5 3.586 1.717.3A1 1 0 1 0 .3 1.717L4.293 5.7a1 1 0 0 0 1.414 0L9.7 1.717a1 1 0 0 0 .29-.707z"></path></symbol><symbol id="spectrum-css-icon-ChevronLeftMedium" viewBox="0 0 6 10"><path d="M5.7 8.283L2.414 5 5.7 1.717A1 1 0 1 0 4.283.3L.3 4.293a1 1 0 0 0 0 1.414L4.283 9.7A1 1 0 1 0 5.7 8.283z"></path></symbol><symbol id="spectrum-css-icon-ChevronRightMedium" viewBox="0 0 6 10"><path d="M5.99 5a1 1 0 0 0-.29-.707L1.717.3A1 1 0 1 0 .3 1.717L3.586 5 .3 8.283A1 1 0 1 0 1.717 9.7L5.7 5.707A1 1 0 0 0 5.99 5z"></path></symbol><symbol id="spectrum-css-icon-ChevronRightSmall" viewBox="0 0 6 8"><path d="M5.5 4a.749.749 0 0 0-.22-.531C4.7 2.863 3.242 1.5 2.041.23A.75.75 0 1 0 .98 1.291L3.689 4 .98 6.709A.75.75 0 1 0 2.041 7.77L5.28 4.531A.749.749 0 0 0 5.5 4z"></path></symbol><symbol id="spectrum-css-icon-CrossMedium" viewBox="0 0 8 8"><path d="M7.77 6.709L5.061 4 7.77 1.291A.75.75 0 1 0 6.709.23L4 2.939 1.291.23A.75.75 0 1 0 .23 1.291L2.939 4 .23 6.709A.75.75 0 1 0 1.291 7.77L4 5.061 6.709 7.77A.75.75 0 1 0 7.77 6.709z"></path></symbol><symbol id="spectrum-css-icon-CrossSmall" viewBox="0 0 8 8"><path d="M7.317 6.433L4.884 4l2.433-2.433a.625.625 0 0 0-.884-.884L4 3.116 1.567.683a.625.625 0 0 0-.884.884L3.116 4 .683 6.433a.625.625 0 0 0 .884.884L4 4.884l2.433 2.433a.625.625 0 0 0 .884-.884z"></path></symbol><symbol id="spectrum-css-icon-DashSmall" viewBox="0 0 10 10"><path d="M8 4H2a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2z"></path></symbol><symbol id="spectrum-css-icon-Magnifier" viewBox="0 0 16 16"><path d="M15.77 14.709l-4.534-4.534a6.013 6.013 0 1 0-1.061 1.061l4.534 4.534a.75.75 0 1 0 1.061-1.061zM6.5 11A4.5 4.5 0 1 1 11 6.5 4.505 4.505 0 0 1 6.5 11z"></path></symbol><symbol id="spectrum-icon-18-Alert" viewBox="0 0 36 36"><path d="M17.127 2.579L.4 32.512A1 1 0 0 0 1.272 34h33.456a1 1 0 0 0 .873-1.488L18.873 2.579a1 1 0 0 0-1.746 0zM20 29.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5zm0-6a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-12a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5z"></path></symbol><symbol id="spectrum-icon-18-Browse" viewBox="0 0 36 36"><path d="M35.087 20.17S29.206 7.832 28.442 5.813c-.729-1.926-1.669-3.729-3.729-3.729-2.31 0-3.511 1.674-3.729 3.729-.063.59-.2 2.474-.361 4.23h-5.249c-.2-2.131-.349-4.134-.358-4.23-.181-2.093-1.016-3.73-3.729-3.73-2.06 0-2.91 1.84-3.729 3.729C6.9 7.322.764 20.447.764 20.447h.014a8.2 8.2 0 1 0 15.73 3.263c0-.252-.015-1.466-.038-1.712h3.058c-.022.246-.038 1.461-.038 1.712a8.2 8.2 0 1 0 15.6-3.542zM8.3 29.082a5.37 5.37 0 1 1 5.37-5.37 5.37 5.37 0 0 1-5.37 5.37zm19.392 0a5.37 5.37 0 1 1 5.37-5.37 5.37 5.37 0 0 1-5.362 5.37z"></path></symbol><symbol id="spectrum-icon-18-Camera" viewBox="0 0 36 36"><circle cx="18" cy="18" r="6"></circle><path d="M33 8h-6.05L23.6 4.326A1 1 0 0 0 22.859 4h-9.718a1 1 0 0 0-.739.326L9.05 8H3a1 1 0 0 0-1 1v20a1 1 0 0 0 1 1h30a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1zM18 26.2a8.2 8.2 0 1 1 8.2-8.2 8.2 8.2 0 0 1-8.2 8.2z"></path></symbol><symbol id="spectrum-icon-18-Checkmark" viewBox="0 0 36 36"><path d="M31.312 7.725l-1.455-1.133a1 1 0 0 0-1.4.175L14.822 24.283l-6.647-6.612a1 1 0 0 0-1.414 0L5.436 19a1 1 0 0 0 0 1.415l8.926 8.9a1 1 0 0 0 1.5-.093L31.487 9.128a1 1 0 0 0-.175-1.403z"></path></symbol><symbol id="spectrum-icon-18-CloseCircle" viewBox="0 0 36 36"><path d="M27.314 6.686a16 16 0 1 0 0 22.627 16 16 0 0 0 0-22.627zm-2.687 18.527l-1.414 1.414a1.2 1.2 0 0 1-1.7 0L16 21.111l-5.516 5.516a1.2 1.2 0 0 1-1.7 0l-1.409-1.415a1.2 1.2 0 0 1 0-1.7L12.889 18l-5.514-5.516a1.2 1.2 0 0 1 0-1.7l1.414-1.411a1.2 1.2 0 0 1 1.7 0L16 14.888l5.516-5.515a1.2 1.2 0 0 1 1.7 0l1.414 1.414a1.2 1.2 0 0 1 0 1.7L19.112 18l5.516 5.516a1.2 1.2 0 0 1 0 1.7z"></path></symbol><symbol id="spectrum-icon-18-Code" viewBox="0 0 36 36"><path d="M35.493 19.061l-7.859 7.984a1.46 1.46 0 0 1-2.088 0l-.208-.211a1.522 1.522 0 0 1 0-2.121L31.943 18l-6.605-6.712a1.522 1.522 0 0 1 0-2.121l.208-.211a1.46 1.46 0 0 1 2.088 0l7.859 7.984a1.517 1.517 0 0 1 0 2.121zM.507 16.939l7.86-7.984a1.46 1.46 0 0 1 2.088 0l.208.211a1.522 1.522 0 0 1 0 2.121L4.057 18l6.605 6.712a1.522 1.522 0 0 1 0 2.121l-.208.211a1.46 1.46 0 0 1-2.088 0L.507 19.061a1.517 1.517 0 0 1 0-2.122zM16.3 29.519c-.034.135-.1.169-.236.169h-2.8c-.169 0-.2-.067-.169-.2l6.639-24.7c.034-.135.067-.135.2-.135h2.831c.135 0 .169.034.135.169z"></path></symbol><symbol id="spectrum-icon-18-Copy" viewBox="0 0 36 36"><path d="M32 22h2v2h-2zm0-4h2v2h-2zm0-4h2v2h-2zm0-4h2v2h-2zm0-4h2v2h-2zm0-4h2v2h-2zm-4 0h2v2h-2zm-4 0h2v2h-2zm-4 0h2v2h-2zm-4 0h2v2h-2zm-4 0h2v2h-2zm0 4h2v2h-2zm0 4h2v2h-2zm0 4h2v2h-2zm0 4h2v2h-2zm0 4h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2z"></path><path d="M10 12H3a1 1 0 0 0-1 1v20a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1v-7H10z"></path></symbol><symbol id="spectrum-icon-18-Delete" viewBox="0 0 36 36"><path d="M31.5 4H24V2a2 2 0 0 0-2-2H12a2 2 0 0 0-2 2v2H2.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h2l2.413 25.1a1 1 0 0 0 1 .9h18.179a1 1 0 0 0 1-.9L29.5 8h2a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM12 2h10v2H12zm-.458 26.944l-1 .06a.5.5 0 0 1-.529-.469L8.87 11.49a.5.5 0 0 1 .469-.529l1-.06a.5.5 0 0 1 .529.469l1.145 17.045a.5.5 0 0 1-.471.529zM18 28.48a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V11.4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5zm5.985.056a.5.5 0 0 1-.529.469l-1-.06a.5.5 0 0 1-.469-.529l1.147-17.046a.5.5 0 0 1 .529-.469l1 .06a.5.5 0 0 1 .469.529z"></path></symbol><symbol id="spectrum-icon-18-Info" viewBox="0 0 36 36"><path d="M18 2a16 16 0 1 0 16 16A16 16 0 0 0 18 2zm-.3 4.3a2.718 2.718 0 0 1 2.864 2.824 2.665 2.665 0 0 1-2.864 2.863 2.706 2.706 0 0 1-2.864-2.864A2.717 2.717 0 0 1 17.7 6.3zM22 27a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h1v-6h-1a1 1 0 0 1-1-1v-2a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v9h1a1 1 0 0 1 1 1z"></path></symbol><symbol id="spectrum-icon-24-ClassicGridView" viewBox="0 0 48 48"><rect height="18" rx="2" ry="2" width="18" x="4" y="4"></rect><rect height="18" rx="2" ry="2" width="18" x="26" y="4"></rect><rect height="18" rx="2" ry="2" width="18" x="4" y="26"></rect><rect height="18" rx="2" ry="2" width="18" x="26" y="26"></rect></symbol><symbol id="spectrum-icon-24-Code" viewBox="0 0 48 48"><path d="M47.323 25.414L36.845 36.059a1.947 1.947 0 0 1-2.784 0l-.278-.282a2.029 2.029 0 0 1 0-2.828L42.59 24l-8.807-8.949a2.029 2.029 0 0 1 0-2.828l.278-.282a1.947 1.947 0 0 1 2.784 0l10.478 10.644a2.023 2.023 0 0 1 0 2.829zM.677 22.585L11.155 11.94a1.947 1.947 0 0 1 2.784 0l.278.282a2.029 2.029 0 0 1 0 2.828L5.41 24l8.807 8.949a2.029 2.029 0 0 1 0 2.828l-.278.282a1.947 1.947 0 0 1-2.784 0L.677 25.414a2.023 2.023 0 0 1 0-2.829zM21.73 39.359c-.045.18-.135.225-.315.225h-3.73c-.225 0-.27-.09-.225-.27l8.854-32.939c.045-.18.09-.18.27-.18h3.775c.18 0 .225.045.18.225z"></path></symbol><symbol id="spectrum-icon-24-GlobeOutline" viewBox="0 0 48 48"><path d="M24 3.05A21.137 21.137 0 0 0 3.05 24 21.137 21.137 0 0 0 24 44.95 21.137 21.137 0 0 0 44.95 24 21.137 21.137 0 0 0 24 3.05zm16.9 24.567a17.092 17.092 0 0 1-.819 2.639c-.081.2-.137.418-.225.617a17.273 17.273 0 0 1-1.5 2.771c-.042.063-.1.116-.14.178a17.356 17.356 0 0 1-1.892 2.294c-.114.118-.246.219-.363.334a17.346 17.346 0 0 1-2.272 1.875l-.032.021a17.2 17.2 0 0 1-9.21 2.9c6.08-4.582 5.337-7.269 8.783-11.1 1.153-1.537-3.458-1.921-7.3-3.458-4.994-2.305-3.073 1.537-6.915-2.689-2.305-2.689-3.073-6.531 3.842-3.458.768.768 1.153-2.689 2.689-4.61.768-.768.768-1.537 1.153-2.689a2.528 2.528 0 0 0-4.994.384c0 .768-2.689-4.61-.768-4.61a13.646 13.646 0 0 1-3.842-.768c.36-.185.737-.329 1.11-.482A17.052 17.052 0 0 1 23.8 6.717c.067 0 .132-.008.2-.006.384-.384-2.305 2.689-1.537 2.689s5.379 1.153 4.995 1.537c1.319-2.308-.477-3.759-2.469-4.126a17.1 17.1 0 0 1 7.668 2.305c.418.255.864.459 1.258.753.147.1.27.233.413.34a15.818 15.818 0 0 1 2.35 2.264c-.768.384-.768 1.537-.384 2.305.765.765.773.766 2.288.008.245.386.442.8.656 1.209-.23.09-.32.32-.639.32a6.171 6.171 0 0 0-1.921 4.226c0 6.147 1.537 3.842 3.458 4.61a1.4 1.4 0 0 0 1 .369 17.585 17.585 0 0 1-.179 1.78c-.023.106-.038.213-.057.317zM17.78 40.089A18.6 18.6 0 0 1 6.711 24a17.154 17.154 0 0 1 .273-2.825c.061-.361.111-.724.194-1.078a17.026 17.026 0 0 1 .656-2.147c.183-.486.391-.962.616-1.429.159-.331.34-.647.519-.966a17.421 17.421 0 0 1 1.38-2.1c.233-.3.471-.6.723-.884.325-.371.651-.742 1.009-1.086a17.318 17.318 0 0 1 1.545-1.285c.359 3.435-2.685 5.358-1.537 9.186 1.537 4.994 3.458 2.689 5.763 6.147 2.665 3.807 6.819 10.251 4.652 15.6a17.193 17.193 0 0 1-4.724-1.044z"></path></symbol><symbol id="spectrum-icon-24-InfoOutline" viewBox="0 0 48 48"><path d="M24 7.9A16.1 16.1 0 1 1 7.9 24 16.118 16.118 0 0 1 24 7.9zm0-3.8A19.9 19.9 0 1 0 43.9 24 19.9 19.9 0 0 0 24 4.1z"></path><path d="M21.56 14.747a2.24 2.24 0 0 1 4.48 0 2.084 2.084 0 0 1-2.24 2.24 2.116 2.116 0 0 1-2.24-2.24zM27.5 32H26V21a1 1 0 0 0-1-1h-4.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5H22v10h-1.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"></path></symbol><symbol id="spectrum-icon-24-ShowMenu" viewBox="0 0 48 48"><rect class="fill-2" height="6" rx="1" ry="1" width="32" x="8" y="20"></rect><rect class="fill-2" height="6" rx="1" ry="1" width="32" x="8" y="8"></rect><rect class="fill-2" height="6" rx="1" ry="1" width="32" x="8" y="32"></rect></symbol><symbol id="spectrum-icon-24-ViewList" viewBox="0 0 48 48"><rect height="10" rx="2" ry="2" width="10" x="4" y="6"></rect><rect height="10" rx="2" ry="2" width="10" x="4" y="20"></rect><rect height="10" rx="2" ry="2" width="10" x="4" y="34"></rect><rect height="6" rx="1" ry="1" width="24" x="18" y="8"></rect><rect height="6" rx="1" ry="1" width="24" x="18" y="22"></rect><rect height="6" rx="1" ry="1" width="24" x="18" y="36"></rect></symbol></svg>
+
+</div>
+
+  </body>
+</html>
